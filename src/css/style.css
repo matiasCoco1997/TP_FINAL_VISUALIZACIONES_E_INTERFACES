@@ -7,13 +7,24 @@
 
   }
 
-body {
-    box-sizing: border-box;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+} 
+
+main{
+    min-height: 100vh;
+    background-color: red;
+}
+
+footer{
+    background-color: green;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
     width: 100%;
-    height: 100%;
 }
 
 .menu-toggle {
