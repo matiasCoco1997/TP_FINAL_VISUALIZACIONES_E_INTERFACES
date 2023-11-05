@@ -1,11 +1,10 @@
-
 :root {
 
     --color-azul: #114380;
     --color-naranja: #ed8634;
     --color-blanco-tipografia: white;
 
-  }
+}
 
 *{
     margin: 0;
@@ -13,18 +12,22 @@
     box-sizing: border-box;
 } 
 
-main{
-    min-height: 100vh;
-    background-color: red;
+.element-hide{
+    display: none;
 }
 
-footer{
-    background-color: green;
+.element-show{
+    display: block;
+}
+
+main{
+    min-height: 100vh;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     width: 100%;
+    min-width: 375px;
 }
 
 .menu-toggle {
@@ -35,25 +38,20 @@ body {
 
 /* Media query para mostrar/ocultar el botón hamburguesa */
 @media (max-width: 768px) {
+
+    /* ESTILOS HEADER CELULAR */
     
     header{
         width: 100%;
     }
 
-    .nav {
+    nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         background-color: var(--color-azul);
         width: 100%;
-    }
-
-    .element-hide{
-        display: none;
-    }
-
-    .element-show{
-        display: block;
     }
 
     .menu-img {
@@ -62,22 +60,27 @@ body {
         align-items: center;
     }
 
-    .menu-toggle {
+    .menu-img img{
+        max-height: 50px;
+    }
+
+    .menu-btn {
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        color: var(--color-blanco-tipografia);
+        
         padding: 20px;
         max-height: 60px;
     }
 
-    .menu-toggle:hover{
+    .menu-btn:hover{
         background-color: var(--color-naranja);
     }
 
-    .menu-toggle i{
+    .menu-btn i{
         font-size: 1.5em;
+        color: var(--color-blanco-tipografia);
     }
 
     .nav-list{
@@ -88,6 +91,10 @@ body {
         width: 100%;
     }
 
+    .nav-list li{
+        width: 100%;
+    }
+
     .nav-list a{
         font-weight: bold;
         display: block;
@@ -95,11 +102,87 @@ body {
         color: var(--color-blanco-tipografia);
         padding: 10px;
         font-size: 1em;
+        text-decoration: none;
     }
 
     .nav-list a:hover{
         color: var(--color-blanco-tipografia);
         background-color: var(--color-naranja);
+    }
+
+    /* ESTILOS MAIN CELULAR */
+
+
+    /* ESTILOS FOOTER CELULAR */
+    footer {
+        background-color: var(--color-azul);
+        color: var(--color-blanco-tipografia);
+        padding: 10px;
+        width: 100%;
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-top: 5px solid rgb(0, 33, 105);
+    }
+
+    .footer-content .footer-derechos{
+        text-align: center;
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    .footer-maps{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .footer-maps h4{
+        display: inline-block;
+    }
+
+    .footer-maps p{
+        width: 100%;
+        margin-top: 10px;
+        font-size: 0.9em;
+    }
+
+    .footer-maps a{
+        font-size: 1.2em;
+        padding-left: 10px;
+        text-decoration: none;
+        color: var(--color-blanco-tipografia);
+    }
+
+    .footer-maps a:hover {
+        color: var(--color-naranja);
+    }
+
+    .footer-icons{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer-icons h4{
+        width: 100%;
+    }
+
+    .footer-icons a {
+        color: var(--color-blanco-tipografia);
+        font-size: 1.5em;
+        padding: 5px;
+    }
+
+    .footer-icons a:hover {
+        color: var(--color-naranja);
     }
 
 }
