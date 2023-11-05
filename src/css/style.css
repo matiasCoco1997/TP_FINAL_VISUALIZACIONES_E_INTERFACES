@@ -1,27 +1,25 @@
 :root {
-
     --color-azul: #114380;
     --color-naranja: #ed8634;
     --color-blanco-tipografia: white;
-
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+}
 
-.element-hide{
+.element-hide {
     display: none;
 }
 
-.element-show{
+.element-show {
     display: block;
 }
 
 main {
-    min-height: 70vh;
+    min-height: 72vh;
 }
 
 body {
@@ -36,213 +34,330 @@ body {
     cursor: pointer;
 }
 
-/* Media query para mostrar/ocultar el botón hamburguesa */
-@media (max-width: 768px) {
+/*========================= CELULARES ========================= */
 
-    /* ESTILOS HEADER CELULAR */
-    
-    header{
-        width: 100%;
-    }
+/* ESTILOS HEADER CELULAR */
+header {
+    width: 100%;
+}
 
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        background-color: var(--color-azul);
-        width: 100%;
-    }
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--color-azul);
+    width: 100%;
+}
 
-    .menu-img {
-        display: flex;
-        cursor: pointer;
-        align-items: center;
-    }
+.menu-img {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
 
-    .menu-img img{
-        max-height: 50px;
-    }
+.menu-img img {
+    max-height: 50px;
+}
 
-    .menu-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        padding: 20px;
-        max-height: 60px;
-    }
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 20px;
+    max-height: 60px;
+}
 
-    .menu-btn:hover{
-        background-color: var(--color-naranja);
-    }
+.menu-btn:hover {
+    background-color: var(--color-naranja);
+}
 
-    .menu-btn i{
-        font-size: 1.5em;
-        color: var(--color-blanco-tipografia);
-    }
+.menu-btn i {
+    font-size: 1.5em;
+    color: var(--color-blanco-tipografia);
+}
 
-    .lista-nav{
-        display: none;
-        list-style: none;
-        padding: 0px;
-        margin: 0px;
-        width: 100%;
-    }
+.lista-nav {
+    display: none;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
 
-    .nav-list li{
-        width: 100%;
-    }
+.nav-list li {
+    width: 100%;
+}
 
-    .lista-nav a{
-        font-weight: bold;
-        display: block;
-        width: 100%;
-        color: var(--color-blanco-tipografia);
-        padding: 10px;
-        font-size: 1em;
-        text-decoration: none;
-    }
+.lista-nav a {
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    color: var(--color-blanco-tipografia);
+    padding: 10px;
+    font-size: 1em;
+    text-decoration: none;
+}
 
-    .lista-nav a:hover{
-        color: var(--color-blanco-tipografia);
-        background-color: var(--color-naranja);
-    }
+.lista-nav a:hover {
+    color: var(--color-blanco-tipografia);
+    background-color: var(--color-naranja);
+}
 
-    /* ESTILOS MAIN CELULAR */
+/* ESTILOS MAIN CELULAR */
 
-    .main-index{
-        padding: 10px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: url('../img/imgs_index/sacando_el_registro.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-x: -10px;
+.main-index {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/imgs_index/sacando_el_registro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -10px;
+}
+
+.main-container {
+    color: var(--color-blanco-tipografia);
+    min-height: 300px;/*VER QUE ONDA ACA QUE NO SE POR QUE NO ME TOMA LOS PORCENTAJES*/
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.main-container h1 {
+    text-align: center;
+    font-size: 1.8em;
+    text-align: center;
+    width: 100%;
+}
+
+.main-container h3 {
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.main-container h3 span {
+    font-weight: 600;
+    color: var(--color-azul)
+}
+
+.contenedor-botones-index {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-index {
+    background-color: #28a745;
+    color: var(--color-blanco-tipografia);
+    font-weight: bold;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-index:hover {
+    background-color: var(--color-naranja);
+}
+
+
+/* ESTILOS FOOTER CELULAR */
+footer {
+    background-color: var(--color-azul);
+    color: var(--color-blanco-tipografia);
+    padding: 10px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 5px solid rgb(0, 33, 105);
+}
+
+.footer-content .footer-derechos {
+    text-align: center;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.footer-maps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.footer-maps h4 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+
+.footer-maps a {
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-blanco-tipografia);
+}
+
+.footer-maps a:hover {
+    color: var(--color-naranja);
+    text-decoration: underline;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer-icons h4 {
+    width: 100%;
+    text-align: center;
+}
+
+.footer-icons a {
+    color: var(--color-blanco-tipografia);
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+.footer-icons a:hover {
+    color: var(--color-naranja);
+}
+
+.footer-phones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-phones h4{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.footer-phones p{
+    padding: 5px;
+    width: 100%;
+}
+
+
+/*========================= TABLETS Y NOTEBOOKS ========================= */
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
+
+    .main-index {
+        background-size:cover;
+        background-position-x: 0px;
     }
 
     .main-container{
-        color: var(--color-blanco-tipografia);
-        min-height: 300px; /*VER QUE ONDA ACA QUE NO SE POR QUE NO ME TOMA LOS PORCENTAJES*/
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-around;
-    }
-
-    .main-container h1{
-        text-align: center;
-        font-size: 1.8em;
-        text-align: center;
-        width: 100%;
-    }
-
-    .main-container h3{
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .main-container h3 span{
-        font-weight: 600;
-        color: var(--color-azul)
+        justify-content: center;
     }
 
     .contenedor-botones-index{
-        width: 100%;
+        justify-content: space-between;
+        width: 70%;
+        max-width: 550px;
+    }
+}
+
+
+/*========================= PC DE ESCRITORIO ========================= */
+@media only screen and (min-width: 1367px) {
+
+    .menu-btn{
+        display: none;
+    }
+
+    .menu-img{
+        height: 100%;
+    }
+
+    .menu-img img{
+        padding: 5px;
+    }
+
+    .lista-nav{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: flex-end;
+        width: 80%;
     }
 
-    .btn-index{
-        background-color: #28a745;
-        color: var(--color-blanco-tipografia);
-        font-weight: bold;
-        padding: 20px 25px;
-        border: none;
-        border-radius: 5px;
-        font-size: 1em;
-        cursor: pointer;
-        text-decoration: none;
+    .lista-nav li{
+        width: auto;
+        min-height: 50px;
     }
 
-    .btn-index:hover{
-        background-color: var(--color-naranja);
+    .lista-nav li a{
+        padding: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+        min-height: 50px;
     }
 
-
-
-
-
-    /* ESTILOS FOOTER CELULAR */
-    footer {
-        background-color: var(--color-azul);
-        color: var(--color-blanco-tipografia);
-        padding: 10px;
-        width: 100%;
+    main {
+        min-height: 80vh;
     }
 
-    .footer-content {
-        display: flex;
-        align-items: center;
+    .main-index {
+        background-size:cover;
+        background-position-x: 0px;
+    }
+
+    .main-container{
         justify-content: center;
-        flex-wrap: wrap;
-        border-top: 5px solid rgb(0, 33, 105);
     }
 
-    .footer-content .footer-derechos{
-        text-align: center;
-        width: 100%;
-        font-size: 0.9em;
+    .contenedor-botones-index{
+        justify-content: space-between;
+        width: 70%;
+        max-width: 550px;
+    }
+
+    .footer-content{
+        justify-content: space-around;
+        align-items: start;
+        min-height: 15vh;
     }
 
     .footer-maps{
         display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-bottom: 30px;
-    }
-
-    .footer-maps h4{
-        display: inline-block;
-    }
-
-
-    .footer-maps a{ 
-        width: 100%;
-        margin-top: 10px;
-        font-size: 0.9em;
-        text-decoration: none;
-        color: var(--color-blanco-tipografia);
-    }
-
-    .footer-maps a:hover {
-        color: var(--color-naranja);
-        text-decoration: underline;
+        width: 30%;
     }
 
     .footer-icons{
         display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        margin-bottom: 20px;
+        width: 30%;
     }
 
-    .footer-icons h4{
-        width: 100%;
-    }
-
-    .footer-icons a {
-        color: var(--color-blanco-tipografia);
-        font-size: 1.5em;
-        padding: 5px;
-    }
-
-    .footer-icons a:hover {
-        color: var(--color-naranja);
+    .footer-phones{
+        display: flex;
+        width: 30%;
     }
 }
+    
