@@ -20,21 +20,21 @@
     display: block;
 }
 
-main{
-    min-height: 100vh;
+main {
+    min-height: 62vh;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     width: 100%;
     min-width: 375px;
+    min-height: 100vh;
 }
 
 .menu-toggle {
     display: none;
     cursor: pointer;
 }
-
 
 /* Media query para mostrar/ocultar el botón hamburguesa */
 @media (max-width: 768px) {
@@ -83,7 +83,7 @@ body {
         color: var(--color-blanco-tipografia);
     }
 
-    .nav-list{
+    .lista-nav{
         display: none;
         list-style: none;
         padding: 0px;
@@ -95,7 +95,7 @@ body {
         width: 100%;
     }
 
-    .nav-list a{
+    .lista-nav a{
         font-weight: bold;
         display: block;
         width: 100%;
@@ -105,12 +105,74 @@ body {
         text-decoration: none;
     }
 
-    .nav-list a:hover{
+    .lista-nav a:hover{
         color: var(--color-blanco-tipografia);
         background-color: var(--color-naranja);
     }
 
     /* ESTILOS MAIN CELULAR */
+
+    .main-index{
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-container{
+        color: var(--color-azul);
+        min-height: 300px; /*VER QUE ONDA ACA QUE NO SE POR QUE NO ME TOMA LOS PORCENTAJES*/
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        /*border: 1px red solid;*/
+    }
+
+    .main-container h1{
+        text-align: center;
+        font-size: 1.8em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-container h3{
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .main-container h3 span{
+        font-weight: 600;
+        color: var(--color-azul)
+    }
+
+    .contenedor-botones-index{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .btn-index{
+        background-color: #28a745;
+        color: var(--color-blanco-tipografia);
+        font-weight: bold;
+        padding: 20px 25px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .btn-index:hover{
+        background-color: var(--color-naranja);
+    }
+
+
+
 
 
     /* ESTILOS FOOTER CELULAR */
@@ -146,21 +208,18 @@ body {
         display: inline-block;
     }
 
-    .footer-maps p{
+
+    .footer-maps a{ 
         width: 100%;
         margin-top: 10px;
         font-size: 0.9em;
-    }
-
-    .footer-maps a{
-        font-size: 1.2em;
-        padding-left: 10px;
         text-decoration: none;
         color: var(--color-blanco-tipografia);
     }
 
     .footer-maps a:hover {
         color: var(--color-naranja);
+        text-decoration: underline;
     }
 
     .footer-icons{
@@ -168,7 +227,7 @@ body {
         align-items: center;
         flex-wrap: wrap;
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .footer-icons h4{
@@ -184,5 +243,4 @@ body {
     .footer-icons a:hover {
         color: var(--color-naranja);
     }
-
 }

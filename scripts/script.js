@@ -1,11 +1,11 @@
 
 $(document).ready(function() {
     $(".menu-btn").click(function() {
-        $(".nav-list").slideToggle();
+        $(".lista-nav").slideToggle();
     });
 
 
-    $(".nav-link").on("mouseenter", function() {
+    $(".link-menu").on("mouseenter", function() {
         $(this).css("background-color", "#ed8634");
     });
 
