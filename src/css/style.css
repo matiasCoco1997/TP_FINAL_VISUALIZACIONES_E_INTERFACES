@@ -303,8 +303,10 @@ footer {
     }
 
     .lista-nav{
-        display: flex;
+        display: flex !important;
+        align-items: center;
         justify-content: flex-end;
+        flex-wrap: wrap;
         width: 80%;
     }
 
