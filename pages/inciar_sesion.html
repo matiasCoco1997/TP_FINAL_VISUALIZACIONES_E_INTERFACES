@@ -7,6 +7,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/login.css">
 
     <link rel="icon" href="../src/img/logo_municipio_la_matanza_icono_browser.png" type="image/x-icon">
 
@@ -50,8 +51,35 @@
 
     </header>
 
+    <!-- TODO: mensajes de error y redirecion  -->
+    <!-- TODO: Crear usuario ficticio -->
+    <!-- TODO: crear formulario de recuperar contraseña -->
+
     <main>
-        main
+        <section class="LoginForm"> 
+            <h1 class="title">Municipio de la Matanza</h1>
+        <form class="loginContainerForm">
+        <div class="loginContainer">
+            <div class="InputContainer">
+                <input class="inputClass" type="email" name="email" id="email" placeholder="Email">
+                <span class="error-message" id="email-error">Por favor, ingresa tu correo electrónico.</span>
+                <input class="inputClass" type="password" name="password" id="password" placeholder="Contraseña">
+                <span class="error-message" id="password-error">Por favor, ingresa tu contraseña.</span>
+            </div>
+            <div class="labelContainer">
+                <input type="checkbox" id="check" class="check">
+                <label for="check">Recuerdame</label>
+                <a href="#" class="aPassword">Olvidaste tu email o contraseña?</a>    
+            </div>
+            <div class="buttonContainer">
+                <button class="session" type="submit" >Iniciar sesion</button>
+                <a class="register">Registrarme</a>
+            </div>
+
+        </div>
+    </form>
+
+        </section>
     </main>
 
     <footer class="footer-content">
@@ -76,6 +104,7 @@
 
     <!--SCRIPTS-->
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/login.js"></script>
 
     <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/dc0786cc41.js" crossorigin="anonymous"></script>

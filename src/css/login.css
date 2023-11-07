@@ -1,0 +1,137 @@
+:root {
+    --color-azul: #114380;
+    --color-naranja: #ed8634;
+    --color-blanco-tipografia: white;
+}
+
+main{
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/imgs_index/sacando_el_registro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.LoginForm{
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 70%;
+    max-width: 440px;
+}
+
+.loginContainer{
+    background-color: var(--color-azul);
+    padding: 30px 10px;
+    border-radius: 10px;
+}
+
+.title{
+    color: var(--color-blanco-tipografia);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.labelContainer{
+    width: 90%; 
+    margin: auto;
+    color: var(--color-blanco-tipografia);
+    font-weight: normal;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.check{
+    margin-right: 10px;
+}
+
+.aPassword{
+    margin-left: 19%;
+    color: var(--color-blanco-tipografia);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.InputContainer {
+    margin: auto;
+    width: 90%; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+  
+.inputClass {
+border-radius: 10px;
+width: 100%;
+padding: 10px;
+outline: none;
+border: 1px black solid;
+text-align: center;
+background-color: #e5e9ea;
+}
+
+.inputClass::placeholder {
+text-align: center;
+color: var(--color-azul); 
+}
+
+.inputClass:focus {
+background-color: white ;
+border-color:#1a95ba; 
+}
+
+.buttonContainer{
+    margin-top:30px ;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.session{
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    color: var(--color-blanco-tipografia);
+    font-size: 14px;
+    width: 150px;
+    background-color: rgb(0, 128, 0);
+    cursor: pointer;
+}
+
+.register{
+    cursor: pointer;
+    text-decoration: underline;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+}
+
+.error-message{
+    display: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1366px) {
+    .LoginForm{
+        width: 80%;
+    }
+}
+
+
