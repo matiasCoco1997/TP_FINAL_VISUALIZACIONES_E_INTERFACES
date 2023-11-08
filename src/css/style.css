@@ -4,6 +4,10 @@
     --color-blanco-tipografia: white;
 }
 
+.actualPage{
+    background-color: #1a95ba;
+}
+
 * {
     margin: 0;
     padding: 0;
