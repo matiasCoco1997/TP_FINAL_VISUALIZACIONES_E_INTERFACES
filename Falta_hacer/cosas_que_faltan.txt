@@ -1,0 +1,48 @@
+PANTALLA REGISTRARSE:
+
+1 - Hacer responsive el registrarse.
+
+2 - Acomodar los errores en pantallas celulares.
+
+3- Sacar el link de los estilos del login y ponerlos en el css de registrarse lo que haga falta.
+
+
+/********************************************************************************************************/
+PANTALLA INICIO DE SESION:
+
+1 - Mover para abajo la pregunta de olvidaste tu contraseña.
+
+2 - Acomodar como aparecen los errores (todas las pantallas).
+
+3 - Que redirija al "home" si ingreso bien los datos, ver el que esta en registrarse.js.
+
+4 - Darle el formato que tiene registrarse.
+
+
+/********************************************************************************************************/
+NAV CUANDO EL USUARIO ESTA LOGUEADO:
+
+1 - Modificar nav para que se vea el usuario el nombre o algo asi cuando te logueas arriba a la derecha (solo vista escritorio).
+    En el caso de que sea pantalla celular o pantalla tablet dejar la hamburguesa con una opcion que sea "ver perfil".
+
+
+/********************************************************************************************************/
+PANTALLA HOME CUANDO TE LOGUEAS:
+
+1 - Hacer todo.
+
+/********************************************************************************************************/
+PANTALLA FORM:
+
+1 - Ponerle un titulo al html que sea home o algo asi.
+
+2 - Hacer responsive.
+
+3 - Ver la barra de progreso porque se chocan los textos cuando achicas la pantalla, para mi sacaria todo y dejaria solo la bara que vaya avanzando a medida que va haciendo el tramite.
+
+
+/********************************************************************************************************/
+PANTALLA AYUDA:
+
+1 - Hacer todo.
+
