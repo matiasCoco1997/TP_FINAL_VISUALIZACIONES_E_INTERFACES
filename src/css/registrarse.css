@@ -1,0 +1,82 @@
+/* Estilo para el contenedor principal */
+h1{
+font-size: 35px;
+}
+
+.InputContainer {
+    gap: 10px; 
+}
+
+/* Estilo para las etiquetas (labels) */
+.labelinput {
+    color: white;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+
+/* Estilo para el contenedor del checkbox */
+.labelContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.campoInput{
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 10px;
+    border-bottom: 2px var(--color-naranja) solid;
+    text-align: center;     
+}
+
+.inputRegistro{
+    border:none;
+    width:100%;
+    background-color: var(--color-azul);
+    outline: none;
+    color: white;
+    font-size: 1em;
+}
+
+.inputRegistro::placeholder{
+    color:rgba(255, 255, 255, 0.504);
+}
+
+.campoInput i{
+    padding-right: 10px;
+    color:var(--color-naranja);
+    font-size: 1.3em;
+}
+
+.sectionclase{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 70%;
+    max-width: 440px;
+}
+
+.mainclass{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.terminos{
+    display: flex;
+    color:white;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 80%;
+    font-size: 14px;
+}
+
+.session{
+     font-size: 1.3em;
+     width: 70%;
+     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.267);
+}
