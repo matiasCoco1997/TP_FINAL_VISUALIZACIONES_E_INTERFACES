@@ -56,9 +56,13 @@
 
     <main class="mainclass">
         <section class="sectionclase">
+
             <form class="loginContainerForm ">
+
                 <div class="loginContainer">
+
                     <h1 class="title">Registrate</h1>
+
                     <div class="InputContainer">
 
 
@@ -69,24 +73,23 @@
                         </div>
 
                         <div class="campoInput">
+                            <i class="fa-solid fa-address-card"></i>
+                            <input class="inputRegistro" type="dni" name="dni" id="dni" placeholder="Nro. documento">
+                            <span class="error-message" id="dni-error">Por favor, ingresa tu dni.</span>
+                        </div>
+
+                        <div class="campoInput">
                             <i class="fa-solid fa-envelope"></i>
                             <input class="inputRegistro" type="email" name="email" id="email" placeholder="Email">
                             <span class="error-message" id="email-error">Por favor, ingresa tu correo electrónico.</span>
                         </div>
+
                         <div class="campoInput">
                             <i class="fa-solid fa-key"></i>
-                            <input class="inputRegistro" type="password" name="password" id="password"
-                                placeholder="Contraseña">
+                            <input class="inputRegistro" type="password" name="password" id="password" placeholder="Contraseña">
                             <span class="error-message" id="password-error">Por favor, ingresa tu contraseña.</span>
                         </div>
                        
-                        <div class="campoInput">
-                            <i class="fa-solid fa-address-card"></i>
-                            <input class="inputRegistro" type="dni" name="dni" id="dni" placeholder="Nro. documento">
-                            <span class="error-message" id="dni-error">Por favor, ingresa tu dni.</span>
-
-                        </div>
-
                         <div class="terminos">
                             <label>Al registrarse, aceptas nuestras condiciones de uso y políticas de privacidad.</label>
                         </div>
@@ -95,7 +98,7 @@
            
                     <div class="buttonContainer">
                         <button class="session" type="submit">Registrarme</button>
-                        <a href="../pages/inciar_sesion.html" class="register">Ya tengo cuenta</a>
+                        <a href="../pages/inciar_sesion.html" class="register" id="iniciarSesionButton">Ya tengo cuenta</a>
                     </div>
 
                 </div>
@@ -128,6 +131,7 @@
 
     <!--SCRIPTS-->
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/registrarse.js"></script>
 
     <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/dc0786cc41.js" crossorigin="anonymous"></script>

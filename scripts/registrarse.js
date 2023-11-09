@@ -1,6 +1,12 @@
 
 $(document).ready(function() {
+
+    const nombreInput = $("#nombre");
+
+    const dniInput = $("#dni");
+
     const emailInput = $("#email");
+
     const passwordInput = $("#password");
 
     const form = $(".loginContainerForm");
@@ -9,6 +15,24 @@ $(document).ready(function() {
         event.preventDefault();
 
         let hasError = false;
+
+        if (nombreInput.val().trim() === "") {
+            nombreInput.addClass("error");
+            $("#nombre-error").show();
+            hasError = true;
+        } else {
+            nombreInput.removeClass("error");
+            $("#nombre-error").hide();
+        }
+
+        if (dniInput.val().trim() === "") {
+            dniInput.addClass("error");
+            $("#dni-error").show();
+            hasError = true;
+        } else {
+            dniInput.removeClass("error");
+            $("#dni-error").hide();
+        }
 
         if (emailInput.val().trim() === "") {
             emailInput.addClass("error");
@@ -30,7 +54,10 @@ $(document).ready(function() {
 
         if (hasError) {
             event.preventDefault();
+        } else{
+            $(location).attr('href', "./inciar_sesion.html");
         }
+
     });
 });
 
