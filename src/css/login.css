@@ -177,9 +177,9 @@ border-color:#1a95ba;
 
 .error-message{
     display: none;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 14px;
+    color: red;
+    font-size: 12px;
+    padding: 3px;
 }
 
 

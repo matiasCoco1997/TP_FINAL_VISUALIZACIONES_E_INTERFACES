@@ -26,16 +26,17 @@ font-size: 35px;
     margin: auto;
     margin-bottom: 15px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     width: 80%;
-    padding: 10px;
+    padding: 5px;
     border-bottom: 2px var(--color-naranja) solid;
     text-align: center;     
 }
 
 .inputRegistro{
     border:none;
-    width:100%;
+    width:80%;
     background-color: var(--color-azul);
     outline: none;
     color: white;
@@ -79,4 +80,8 @@ font-size: 35px;
      font-size: 1.3em;
      width: 70%;
      box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.267);
+}
+
+.errorInput{
+    border-bottom: 2px solid red;
 }
