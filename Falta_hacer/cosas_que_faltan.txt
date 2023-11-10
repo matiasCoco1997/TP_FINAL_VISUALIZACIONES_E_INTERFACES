@@ -10,13 +10,9 @@ PANTALLA REGISTRARSE:
 /********************************************************************************************************/
 PANTALLA INICIO DE SESION:
 
-1 - Mover para abajo la pregunta de olvidaste tu contraseña.
+1 - Acomodar como aparecen los errores (todas las pantallas).
 
-2 - Acomodar como aparecen los errores (todas las pantallas).
-
-3 - Que redirija al "home" si ingreso bien los datos, ver el que esta en registrarse.js.
-
-4 - Darle el formato que tiene registrarse.
+2 - Que redirija al "home" si ingreso bien los datos, ver el que esta en registrarse.js.
 
 
 /********************************************************************************************************/
