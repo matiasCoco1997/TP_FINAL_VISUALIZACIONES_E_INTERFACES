@@ -213,10 +213,10 @@ border-color:#1a95ba;
 
 .error-message{
     display: none;
-    color: #805811;
+    /*color: #805811;*/
+    color: rgba(255, 0, 0, 0.664);
     font-size: 12px;
     padding: 3px;
-    font-weight: 600;
 }
 
 
