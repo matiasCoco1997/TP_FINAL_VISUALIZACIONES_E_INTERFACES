@@ -48,7 +48,7 @@ Correcciones del profe:
 
 - Hacer una evaluacion heuristica de la pagina original.
 
-- Color de los iconos preferible celestes como el menu (No se recomienda complementarios).
+- Color de los iconos preferible celestes como el menu (No se recomienda complementarios). YA LO MODIFIQUE EN REGISTRARSE
 
 - Cambiar el color de los mensajes de error.
 
