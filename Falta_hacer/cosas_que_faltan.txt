@@ -42,3 +42,20 @@ PANTALLA AYUDA:
 
 1 - Hacer todo.
 
+
+/********************************************************************************************************/
+Correcciones del profe:
+
+- Hacer una evaluacion heuristica de la pagina original.
+
+- Color de los iconos preferible celestes como el menu (No se recomienda complementarios).
+
+- Cambiar el color de los mensajes de error.
+
+- Homogeneizar criterios de nombres de botones.
+
+- Home con boton de reserva de turno y calendario con los dias ya disponibles. (con el usuario logueado).
+
+- Añadir localidad.
+
+- Mostrar solo dias y horarios disponibles.
