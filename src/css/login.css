@@ -1,8 +1,3 @@
-:root {
-    --color-azul: #114380;
-    --color-naranja: #ed8634;
-    --color-blanco-tipografia: white;
-}
 
 .contenedorBody{
     position: relative;
@@ -123,16 +118,6 @@ main{
     justify-content: center;
     margin-bottom: 20px;
 }
-  
-/*.inputClass {
-border-radius: 6px;
-width: 100%;
-padding: 10px;
-outline: none;
-border: 1px black solid;
-text-align: center;
-background-color: #e5e9ea;
-}*/
 
 .campoInput{
     display: flex;
@@ -156,11 +141,6 @@ background-color: #e5e9ea;
 .inputClass::placeholder {
     color:rgba(255, 255, 255, 0.504);
 }
-
-/*.inputClass:focus {
-background-color: white ;
-border-color:#1a95ba; 
-}*/
 
 .campoInput i{
     padding-right: 10px;
