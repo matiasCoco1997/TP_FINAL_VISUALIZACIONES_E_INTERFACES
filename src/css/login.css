@@ -194,7 +194,7 @@ main{
 .error-message{
     display: none;
     /*color: #805811;*/
-    color: rgba(255, 0, 0, 0.664);
+    color: #FFA500;
     font-size: 12px;
     padding: 3px;
 }

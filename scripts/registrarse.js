@@ -14,51 +14,49 @@ $(document).ready(function() {
 
         if (nombreInput.val().trim() === "") {
             nombreInput.addClass("error");
-            $("#nombre-error").show();
-            $("#nombreContainer").addClass("errorInput");
+            $("#nombreContainer").addClass("errorBorderBottom");
             hasError = true;
         } else {
             nombreInput.removeClass("error");
-            $("#nombre-error").hide();
-            $("#nombreContainer").removeClass("errorInput");
+            $("#nombreContainer").removeClass("errorBorderBottom");
         }
 
         if (dniInput.val().trim() === "") {
             dniInput.addClass("error");
-            $("#dni-error").show();
-            $("#dniContainer").addClass("errorInput");
+            $("#dniContainer").addClass("errorBorderBottom");
             hasError = true;
         } else {
             dniInput.removeClass("error");
-            $("#dni-error").hide();
-            $("#dniContainer").removeClass("errorInput");
+            $("#dniContainer").removeClass("errorBorderBottom");
         }
 
         if (emailInput.val().trim() === "") {
             emailInput.addClass("error");
-            $("#email-error").show();
-            $("#emailContainer").addClass("errorInput");
+            $("#emailContainer").addClass("errorBorderBottom");
             hasError = true;
         } else {
             emailInput.removeClass("error");
-            $("#email-error").hide();
-            $("#emailContainer").removeClass("errorInput");
+            $("#emailContainer").removeClass("errorBorderBottom");
         }
 
         if (passwordInput.val().trim() === "") {
             passwordInput.addClass("error");
-            $("#password-error").show();
-            $("#passwordContainer").addClass("errorInput");
+            $("#passwordContainer").addClass("errorBorderBottom");
             hasError = true;
         } else {
             passwordInput.removeClass("error");
-            $("#password-error").hide();
-            $("#passwordContainer").removeClass("errorInput");
+            $("#passwordContainer").removeClass("errorBorderBottom");
         }
 
         if (hasError) {
+            console.log("llegue con error");
+            $("#campos-error").show();
+            $("#campos-error").addClass("errorInput");
             event.preventDefault();
+            
         } else{
+            $("#campos-error").hide();
+            $("#campos-error").removeClass("errorInput");
             $(location).attr('href', "./inciar_sesion.html");
         }
 

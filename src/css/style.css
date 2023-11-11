@@ -161,8 +161,9 @@ nav {
 }
 
 .btn-index {
-    background-color: var(--color-naranja);
+    background-color: rgb(0, 128, 0);;
     color: var(--color-blanco-tipografia);
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.267);
     font-weight: bold;
     padding: 20px 25px;
     border: none;

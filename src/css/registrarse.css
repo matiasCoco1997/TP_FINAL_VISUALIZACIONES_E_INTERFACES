@@ -83,5 +83,13 @@ font-size: 35px;
 }
 
 .errorInput{
-    border-bottom: 2px solid red;
+    text-align: initial;
+    width: 80%;
+    color: #FF6600;
 }
+
+.errorBorderBottom{
+    border-bottom: #FF6600 solid 2px;
+}
+
+
