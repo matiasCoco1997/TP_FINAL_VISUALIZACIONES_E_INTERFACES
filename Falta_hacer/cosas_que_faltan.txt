@@ -1,12 +1,3 @@
-PANTALLA REGISTRARSE:
-
-1 - Hacer responsive el registrarse.
-
-2 - Acomodar los errores en pantallas celulares.
-
-3- Sacar el link de los estilos del login y ponerlos en el css de registrarse lo que haga falta.
-
-
 /********************************************************************************************************/
 PANTALLA INICIO DE SESION:
 

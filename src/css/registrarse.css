@@ -156,19 +156,6 @@ main{
     width: 100%;
 }
 
-.session{
-    border: none;
-    border-radius: 6px;
-    height: 40px;
-    color: var(--color-blanco-tipografia);
-    font-size: 14px;
-    font-weight: bold;
-    width: 150px;
-    background-color: rgb(0, 128, 0);
-    cursor: pointer;
-}
-
-
 .container-reg-forg{
     width: 90%;
     display: flex;
@@ -192,8 +179,8 @@ main{
 
 .error-message{
     display: none;
-    /*color: #805811;*/
-    color: #FFA500;
+    background-color: #FF9999;;
+    color: #990000;
     font-size: 12px;
     padding: 3px;
 }
@@ -349,23 +336,32 @@ font-size: 35px;
 }
 
 .session{
-     font-size: 1em;
-     width: 70%;
-     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.267);
+    border: none;
+    border-radius: 6px;
+    height: 40px;
+    color: var(--color-blanco-tipografia);
+    font-size: 1em;
+    width: 70%;
+    background-color:  var(--color-pagina-actual);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.151);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.1s;
 }
 
 .session:hover {
-    background-color: #40ce58;
+    background-color: var(--color-naranja);
 }
 
 .errorInput{
     text-align: initial;
     width: 80%;
-    color: #FF6600;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 .errorBorderBottom{
-    border-bottom: #FF6600 solid 2px;
+    border-bottom: #df0606 solid 2px;
 }
 
 h1{
@@ -376,7 +372,7 @@ h1{
 }
 
 .sectionclase{
-    min-width: 340px;
+    min-width: 300px;
 }
 
 
