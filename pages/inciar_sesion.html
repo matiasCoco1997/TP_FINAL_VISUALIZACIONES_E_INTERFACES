@@ -53,46 +53,44 @@
 
     </header>
 
-    <!-- TODO: mensajes de error y redireccion  = Listo errores, falta redireccion-->
-    <!-- TODO: Crear usuario ficticio = Listo, cualquier mail y contraseña 1234-->
-    <!-- TODO: crear formulario de recuperar contraseña = De momento no es necesario-->
-
     <main>
         <section class="LoginForm">
             <h1 class="title">Municipio de la Matanza</h1>
             <form class="loginContainerForm">
                 <div class="loginContainer">
+
                     <div class="InputContainer">
-                        <div class="campoInput">
+                        
+                        <div class="campoInput" id="emailInputContainer">
                             <i class="fa-solid fa-user"></i>
                             <input class="inputClass" type="email" name="email" id="email" placeholder="Email">
                         </div>
-                        <div class="container-errors">
-                            <span class="error-message" id="email-error">Por favor, ingresa tu correo
-                                electrónico.</span>
-                        </div>
+
                         <div class="campoInput">
                             <i class="fa-solid fa-key"></i>
                             <input class="inputClass" type="password" name="password" id="password"
                                 placeholder="Contraseña">
                         </div>
-                        <div class="container-errors">
-                            <span class="error-message" id="password-error">Por favor, ingresa tu contraseña.</span>
-                            <div class="error-message" id="password-email-error">El email o la contraseña no son
-                                correctos. Inténtalo de nuevo.</div>
-                        </div>
+
+                        <span class="campos-error" style="display: none;" id="campos-error">Mail o contraseña incorrectos.</span>
+
                     </div>
+
                     <div class="labelContainer">
                         <input type="checkbox" id="check" class="check">
                         <label for="check">Recuerdame</label>
                     </div>
+
                     <div class="buttonContainer">
                         <button class="session" type="submit">Iniciar sesion</button>
+
                         <div class="container-reg-forg">
                             <a href="./registrarse.html" class="register">Registrarme</a>
                             <a href="#" class="aPassword">¿Olvidaste tu contraseña?</a>
                         </div>
+
                     </div>
+
                 </div>
             </form>
         </section>

@@ -1,56 +1,52 @@
+$(document).ready(function() {
 
-document.addEventListener("DOMContentLoaded", function() {
+    const emailInput = $("#email");
+    const passwordInput = $("#password");
+    const errorMessage = $("#campos-error");
 
-    const emailInput = document.getElementById("email");
-    const passwordInput = document.getElementById("password");
-    const errorMessage = document.getElementById("password-email-error");
+    var email = "usuario@gmail.com";
 
-    const form = document.querySelector(".loginContainerForm");
-    
-    form.addEventListener("submit", function(event) {
+    const form = $(".loginContainerForm");
+
+
+
+    form.on("submit", function (event) {
+        
         event.preventDefault();
 
-        let email = false
+        let hasError = false;
 
-
-        if (emailInput.value.trim() === "") {
-        emailInput.classList.add("error");
-        document.getElementById("email-error").style.display = "block";
-        hasError = true;
-        } else {
-        email = true
-        emailInput.classList.remove("error");
-        document.getElementById("email-error").style.display = "none"; 
-        }
-    
-        if (passwordInput.value.trim() === "") {
-        passwordInput.classList.add("error");
-        document.getElementById("password-error").style.display = "block"; 
-        hasError = true;
-        } else {
-        passwordInput.classList.remove("error");
-        document.getElementById("password-error").style.display = "none";
+        if(emailInput.val().trim() !== email ){
+            hasError = true;
+            errorMessage.css("display", "block");
+        } else{
+            hasError = false;
+            errorMessage.css("display", "none");
         }
 
-        if (passwordInput.value.trim() !== "1234") {
-        passwordInput.classList.add("error");
-        errorMessage.style.display = "block";
-        hasError = true;
+        if (passwordInput.val().trim() !== "1234") {
+            hasError = true;
+            errorMessage.css("display", "block");
         } else {
-        passwordInput.classList.remove("error");
-        errorMessage.style.display = "none";
+            hasError = false;
+            errorMessage.css("display", "none");
         }
 
-        if  (email) {
-        document.querySelector(".loading").style.display = "flex";
-        setTimeout(function() {
-            document.querySelector(".loading").style.display = "none";
-            }, 2000)
+
+        if (!hasError) {
+            errorMessage.hide();
+            errorMessage.removeClass("error-message");
+            
+            $(".loading").css("display", "flex");
+            setTimeout(function () {
+                $(".loading").css("display", "none");
+            }, 2000);
+
+            $(location).attr('href', "./home.html");
+        } else {
+            errorMessage.show();
+            $("#campos-error").addClass("error-message");
         }
 
     });
 });
-
-
-
-

@@ -49,7 +49,6 @@ $(document).ready(function() {
         }
 
         if (hasError) {
-            console.log("llegue con error");
             $("#campos-error").show();
             $("#campos-error").addClass("errorInput");
             event.preventDefault();
