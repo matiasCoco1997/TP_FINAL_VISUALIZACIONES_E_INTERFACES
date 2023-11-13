@@ -18,6 +18,7 @@ main{
     display: none;
     background-color: #FF9999;;
     color: #990000;
+    font-weight: bold;
     font-size: 12px;
     padding: 8px;
     border-radius: 5px;
