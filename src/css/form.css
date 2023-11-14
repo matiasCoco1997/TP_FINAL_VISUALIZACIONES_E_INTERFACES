@@ -1,0 +1,20 @@
+.inputSelectClass {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /*...*/
+  /* Alineación del dropdown */
+  right: 0;
+  }
+  
+  .inputSelectClass:focus {
+    outline: none;
+  }
+
