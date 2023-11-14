@@ -40,7 +40,7 @@ $(document).ready(function() {
             $(".loading").css("display", "flex");
             setTimeout(function () {
                 $(".loading").css("display", "none");
-            }, 2000);
+            }, 8000);
 
             $(location).attr('href', "./home.html");
         } else {

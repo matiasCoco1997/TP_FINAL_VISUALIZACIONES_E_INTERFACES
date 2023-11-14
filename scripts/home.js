@@ -81,9 +81,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     function cambiarMes(direccion) {
-
+        // Obtener la fecha límite (noviembre de 2023)
+        var fechaLimite = new Date("November 1, 2023");
+    
+        // Calcular la nueva fecha antes de cambiar el mes
+        var nuevaFecha = new Date(anioActual, mesActual + direccion, 1);
+    
+        // Comparar con la fecha límite
+        if (direccion < 0 && nuevaFecha < fechaLimite) {
+            // Si se intenta ir antes de noviembre de 2023, no hacer nada
+            return;
+        }
+    
+        // Cambiar el mes según la dirección
         mesActual += direccion;
-
+    
         if (mesActual < 0) {
             mesActual = 11;
             anioActual--;
@@ -91,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
             mesActual = 0;
             anioActual++;
         }
-
+    
         mostrarCalendario(mesActual, anioActual);
     }
 

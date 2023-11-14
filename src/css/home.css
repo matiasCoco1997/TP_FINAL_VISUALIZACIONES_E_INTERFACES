@@ -95,25 +95,28 @@ main {
     margin: auto;
     background-color: #f7f7f7;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden; /* Puedes ajustar esto según tus necesidades */
     margin-top: 10px;
-    min-height: 300px; /* Establece una altura mínima para el calendario */
+    min-height: 300px; /* Altura mínima deseada */
+    height: 300px; /* Altura fija */
+    display: flex;
+    flex-direction: column;
 }
 
 .cabecera {
     text-align: center;
     padding: 10px;
-    background-color: #3498db; /* Azul para la cabecera */
-    color: #fff; /* Texto blanco en la cabecera */
+    background-color:var(--color-azul);
+    color: #fff; 
     font-weight: bold;
-    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior */
+    border-radius: 10px 10px 0 0; 
 }
 
 .dias-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    min-height: 250px; /* Establece una altura mínima para el contenedor de días */
+    min-height: 250px;
 }
 
 .dia {
@@ -121,7 +124,7 @@ main {
     padding: 10px;
     border: 1px solid #ccc;
     width: 14.2%;
-    min-height: 30px; /* Establece una altura mínima para cada día */
+    min-height: 30px;
 }
 
 .dia.nombre-dia {
@@ -138,17 +141,27 @@ main {
 }
 
 .dia.verde:hover {
-    cursor: pointer; /* Añadido para cambiar el cursor solo en días verdes al pasar el ratón */
+    cursor: pointer;
 }
 
 #prevButton,
 #nextButton {
-    background-color: #3498db;
+    background-color:  var(--color-pagina-actual);
     color: #fff;
     border: none;
-    padding: 8px;
+    border-radius: 5px;
+    width: 10%;
+    padding: 10px;
     margin: 0 5px;
     cursor: pointer;
 }
 
-/* ... (código posterior) */
+
+#prevButton:hover{
+    background-color: var(--color-naranja);
+}
+
+#nextButton:hover{
+    background-color: var(--color-naranja);
+}
+
