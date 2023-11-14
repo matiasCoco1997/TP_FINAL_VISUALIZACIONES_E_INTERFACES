@@ -138,4 +138,14 @@ main {
     cursor: pointer; /* Añadido para cambiar el cursor solo en días verdes al pasar el ratón */
 }
 
+#prevButton,
+#nextButton {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
 /* ... (código posterior) */
