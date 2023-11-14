@@ -11,6 +11,8 @@ PANTALLA HOME CUANDO TE LOGUEAS:
 
 1 - Hacer todo.
 
+2 - Agregar pop up donde creamos que falte.
+
 /********************************************************************************************************/
 PANTALLA FORM:
 
