@@ -141,7 +141,7 @@ main{
     align-items: center;
     width: 80%;
     padding: 5px;
-    border-bottom: 2px var(--color-celeste) solid;
+    border-bottom: 2px var(--color-blanco-tipografia) solid;
     text-align: center;  
 }
 
@@ -160,7 +160,7 @@ main{
 
 .campoInput i{
     padding-right: 10px;
-    color: var(--color-celeste);
+    color: var(--color-blanco-tipografia);
     font-size: 1.3em;
 }
 
