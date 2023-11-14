@@ -10,7 +10,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="../src/css/style.css">
-    <link rel="stylesheet" href="../src/css/registrarse.css">
+    <link rel="stylesheet" href="../src/css/home.css">
 
 
     <!--FONT AWESOME-->
@@ -42,11 +42,28 @@
             </div>
 
 
-            <ul class="lista-nav">
-                <li class="link-menu"><a href="../index.html">Inicio</a></li>
-                <li class="link-menu"><a href="./inciar_sesion.html">Iniciar Sesión</a></li>
-                <li class="link-menu"><a href="./registrarse.html" class="actualPage">Registrarse</a></li>
-                <li class="link-menu"><a href="./ayuda.html">Ayuda</a></li>
+            <ul class="lista-nav" >
+
+                <li class="link-menu"><a href="./home.html">Inicio</a></li>
+
+                <li class="link-menu"><a href="./home.html">Trásmites</a></li>
+
+                <!--<li class="link-menu"><a href="./perfil.html">Ver Perfil</a></li>-->
+
+                <li class="link-menu" id="usuario-nav">
+                    <a href="./perfil.html" class="usuario-nav">
+                       <div class="circulo">
+                            <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="link-menu" id="exit">
+                    <a href="./inciar_sesion.html" class="exit">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+                </li>
+                
             </ul>
 
         </nav>
@@ -54,10 +71,17 @@
     </header>
 
     <main>
+        
+        <div class="home-container">
+            <h1 class="title">¡ Bienvenido Usuario !</h1>
 
-        <div style="color:white; background-color: red; padding: 10px;">
-            esto es el home, HAY QUE CAMBIAR EL NAV
-        </div>  
+            <div id="calendario">
+                <div class="cabecera">Calendario</div>
+                <div class="dias-container"></div>
+            </div>
+
+            <button>Solicitar turno</button>
+        </div>
 
     </main>
 
@@ -85,7 +109,7 @@
 
     <!--SCRIPTS-->
     <script src="../scripts/script.js"></script>
-    <script src="../scripts/registrarse.js"></script>
+    <script src="../scripts/home.js"></script>
 
     <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/dc0786cc41.js" crossorigin="anonymous"></script>

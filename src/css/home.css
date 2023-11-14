@@ -1,0 +1,141 @@
+.contenedorBody {
+    position: relative;
+}
+
+main {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/imgs_index/sacando_el_registro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.link-menu {
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+}
+
+.link-menu a {
+    display: flex !important;
+    align-items: center;
+    height: 100%;
+}
+
+.exit {
+    padding: 0px !important;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.exit:hover {
+    background-color: var(--color-azul) !important;
+}
+
+.exit i {
+    font-size: 20px;
+}
+
+.exit i:hover {
+    color: red;
+}
+
+.error-message {
+    display: none;
+    background-color: #FF9999;
+    color: #990000;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.usuario-nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0px !important;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.usuario-nav:hover {
+    background-color: var(--color-azul) !important;
+}
+
+.circulo {
+    width: 40px;
+    height: 40px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circulo:hover {
+    background-color: var(--color-naranja);
+}
+
+.title {
+    color: var(--color-blanco-tipografia);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+#calendario {
+    max-width: 400px; /* Ajusta el ancho según tus necesidades */
+    margin: auto;
+    background-color: #f7f7f7; /* Fondo gris más claro para el calendario */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Para cortar las esquinas redondeadas */
+    margin-top: 10px; /* Agregado para separar el calendario del contenido superior */
+}
+
+.cabecera {
+    text-align: center;
+    padding: 10px;
+    background-color: #3498db; /* Azul para la cabecera */
+    color: #fff; /* Texto blanco en la cabecera */
+    font-weight: bold;
+    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+.dias-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.dia {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 14.2%; /* Ajustar el ancho para que haya 7 columnas en una fila */
+}
+
+.dia.nombre-dia {
+    font-weight: bold;
+}
+
+.dia.vacio {
+    visibility: hidden;
+}
+
+.dia.verde {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.dia.verde:hover {
+    cursor: pointer; /* Añadido para cambiar el cursor solo en días verdes al pasar el ratón */
+}
+
+/* ... (código posterior) */
