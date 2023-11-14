@@ -117,6 +117,8 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     min-height: 250px;
+    color: var(--color-azul);
+    font-weight: bold;
 }
 
 .dia {
