@@ -91,12 +91,13 @@ main {
 }
 
 #calendario {
-    max-width: 400px; /* Ajusta el ancho según tus necesidades */
+    max-width: 400px;
     margin: auto;
-    background-color: #f7f7f7; /* Fondo gris más claro para el calendario */
-    border-radius: 10px; /* Bordes redondeados */
-    overflow: hidden; /* Para cortar las esquinas redondeadas */
-    margin-top: 10px; /* Agregado para separar el calendario del contenido superior */
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    min-height: 300px; /* Establece una altura mínima para el calendario */
 }
 
 .cabecera {
@@ -112,13 +113,15 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    min-height: 250px; /* Establece una altura mínima para el contenedor de días */
 }
 
 .dia {
     text-align: center;
     padding: 10px;
     border: 1px solid #ccc;
-    width: 14.2%; /* Ajustar el ancho para que haya 7 columnas en una fila */
+    width: 14.2%;
+    min-height: 30px; /* Establece una altura mínima para cada día */
 }
 
 .dia.nombre-dia {
