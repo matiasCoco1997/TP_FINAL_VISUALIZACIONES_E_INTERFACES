@@ -95,10 +95,10 @@ main {
     margin: auto;
     background-color: #f7f7f7;
     border-radius: 10px;
-    overflow: hidden; /* Puedes ajustar esto según tus necesidades */
+    overflow: hidden;
     margin-top: 10px;
-    min-height: 300px; /* Altura mínima deseada */
-    height: 300px; /* Altura fija */
+    min-height: 300px;
+    height: 300px;
     display: flex;
     flex-direction: column;
 }
