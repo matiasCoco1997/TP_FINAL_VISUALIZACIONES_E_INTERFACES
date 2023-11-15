@@ -1,0 +1,103 @@
+main {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/imgs_index/sacando_el_registro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.fondo{
+    width:80%;
+}
+
+.mainclass {
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width:100%;
+    color: white; /* Texto en blanco */
+}
+
+.mainclass h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 5px; /* Espaciado entre h1 y p */
+}
+
+.mainclass p {
+    margin-top: 0; /* Eliminar el margen superior por defecto */
+}
+
+.requisitos {
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo opaco blanco */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.requisitos h2 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    
+
+}
+
+.requisitos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.requisitos li {
+    margin-bottom: 10px;
+    position: relative;
+    margin-bottom: 15px;
+
+}
+
+.requisitos li::before {
+    content: '\2713'; /* Código de tilde */
+    color: blue; /* Color celeste */
+    font-size: 20px;
+    margin-right: 5px;
+    position: absolute;
+    left: -20px;
+}
+
+.requisitos a{
+    color: blue; /* Color azul para los enlaces */
+    text-decoration: underline; 
+}
+
+.pasos {
+    max-width: 80%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Configurar para una columna */
+}
+
+.pasos .cada-item {
+    margin-bottom: 20px;
+}
+
+.pasos h3 {
+    font-weight: bold;
+}
+
+.pasos p {
+    margin-top: 5px;
+}
+
+a {
+    color: #3498db; /* Color azul para los enlaces */
+    text-decoration: underline; 
+}
+
+a:hover {
+    text-decoration: none; 
+}
