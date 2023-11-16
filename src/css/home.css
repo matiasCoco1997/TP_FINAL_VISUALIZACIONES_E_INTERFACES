@@ -184,18 +184,41 @@ main {
     width: 90%;
     height: 90%;
     display: flex;
-    align-items: end;
+    align-items:start;
+    justify-content: space-evenly;
     box-shadow: 5px 5px 10px;
     transition: 0.3s all;
+    flex-direction: column;
 }
 
+
+.caja-enlace{
+    text-decoration: none;
+    box-shadow: 5px 5px 10px #000000;
+}
 .caja:hover {
     transform: translateY(-9px);
+    background-color: #BAD9FF;
+}
+
+.icono-caja{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.material-symbols-outlined{
+    font-size: 34px;
+    color: #000000;
 }
 
 .texto-caja {
-    margin-left: 15px;
-    margin-bottom: 15px;
+    margin-left: 10px;
+    border: solid 1px ;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+    font-size: 0.9em;
+    color: #f0f0f0;
+    background-color: var(--color-azul);
 }
 
 .ingresar {
