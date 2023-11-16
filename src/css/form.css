@@ -3,8 +3,10 @@
     border: none;
     outline: none;
     margin: 0 auto;
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: left;
 
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -13,8 +15,57 @@
   /* Alineación del dropdown */
   right: 0;
   }
+
+  #tipo_tramite,
+  #tipo_documento, .inputSelectClass{
+    color: rgba(255, 255, 255, 0.732) !important;
+}
   
   .inputSelectClass:focus {
     outline: none;
   }
+
+.progress-bar{
+  width: 25%;
+}
+
+.campoInput{
+  width: 100%;
+  text-align: left;
+  flex-wrap: nowrap !important;
+}
+
+.campoInput i {
+  padding-right: 15px;
+}
+
+.inputClass{
+  text-align: left !important;
+  width: 100% !important;
+
+}
+
+.inputClass::placeholder, #fecha_nacimiento::placeholder {
+  color: rgba(255, 255, 255, 0.732) !important;
+}
+
+.inputDateClass{
+  color:  rgba(255, 255, 255, 0.732) !important;
+}
+
+.bottomContent{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.tab{
+  text-align: center;
+  width: 100px;
+}
+
+.tabDate{
+  width: 100px;
+  text-align: left;
+}
 
