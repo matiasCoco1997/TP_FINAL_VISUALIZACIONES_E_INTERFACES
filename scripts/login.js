@@ -37,12 +37,13 @@ $(document).ready(function() {
             errorMessage.hide();
             errorMessage.removeClass("error-message");
             
-            $(".loading").css("display", "flex");
+            $(".loading").css("display", "flex"); 
             setTimeout(function () {
-                $(".loading").css("display", "none");
-            }, 8000);
+                $(".loading").css("display", "none");  
+                $(location).attr('href', "./home.html");
+            }, 1000);
 
-            $(location).attr('href', "./home.html");
+
         } else {
             errorMessage.show();
             $("#campos-error").addClass("error-message");
