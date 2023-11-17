@@ -75,15 +75,20 @@
 /* calendario */
 
 
+.calendarContainer{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 #calendario {
-  max-width: 400px;
+  
   margin: auto;
   background-color: #f7f7f7;
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
-  min-height: 300px;
-  height: 200px;
+  max-width: 400px;
+  /*min-height: 300px;*/
   display: flex;
   flex-direction: column;
 }
@@ -91,7 +96,7 @@
 .cabecera {
   text-align: center;
   padding: 10px;
-  background-color:var(--color-azul);
+  background-color:var(--color-pagina-actual);
   color: #fff; 
   font-weight: bold;
   border-radius: 10px 10px 0 0; 
@@ -133,7 +138,7 @@
 
 #prevButton,
 #nextButton {
-  background-color:  var(--color-pagina-actual);
+  background-color:  var(--color-azul);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -158,4 +163,55 @@
 
 .btn-danger{
   display: none;
+}
+
+.link-menu a {
+  display: flex !important;
+  align-items: center;
+  height: 100%;
+}
+
+.exit {
+  padding: 0px !important;
+  margin-right: 30px;
+  margin-left: 10px;
+}
+
+.exit:hover {
+  background-color: var(--color-azul) !important;
+}
+
+.exit i {
+  font-size: 20px;
+}
+
+.exit i:hover {
+  color: red;
+}
+
+.usuario-nav {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0px !important;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.usuario-nav:hover {
+  background-color: var(--color-azul) !important;
+}
+
+.circulo {
+  width: 40px;
+  height: 40px;
+  background-color: #3498db;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circulo:hover {
+  background-color: var(--color-naranja);
 }
