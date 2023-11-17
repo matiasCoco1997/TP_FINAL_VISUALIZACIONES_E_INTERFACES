@@ -45,6 +45,13 @@ document.addEventListener('DOMContentLoaded', function () {
             // Marcar algunos días en verde (puedes personalizar esta lógica según tus necesidades)
             if (i % 2 === 0) {
                 dia.classList.add('verde');
+                dia.addEventListener('click', function() {
+                    console.log('Día azul:', i);
+                });
+            }else{
+                dia.addEventListener('click', function() {
+                    console.log('Día gris:', i);
+                });  
             }
 
             diasContainer.appendChild(dia);

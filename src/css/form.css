@@ -56,7 +56,8 @@
 .bottomContent{
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
 .tab{
@@ -69,3 +70,92 @@
   text-align: left;
 }
 
+
+
+/* calendario */
+
+
+#calendario {
+  max-width: 400px;
+  margin: auto;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+  min-height: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecera {
+  text-align: center;
+  padding: 10px;
+  background-color:var(--color-azul);
+  color: #fff; 
+  font-weight: bold;
+  border-radius: 10px 10px 0 0; 
+}
+
+.dias-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 250px;
+  color: var(--color-azul);
+  font-weight: bold;
+}
+
+.dia {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 14.2%;
+  min-height: 30px;
+}
+
+.dia.nombre-dia {
+  font-weight: bold;
+}
+
+.dia.vacio {
+  visibility: hidden;
+}
+
+.dia.verde {
+  background-color:  var(--color-pagina-actual);
+  color: #fff;
+}
+
+.dia.verde:hover {
+  cursor: pointer;
+}
+
+#prevButton,
+#nextButton {
+  background-color:  var(--color-pagina-actual);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 10%;
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+
+#prevButton:hover{
+  background-color: var(--color-naranja);
+}
+
+#nextButton:hover{
+  background-color: var(--color-naranja);
+}
+
+.calendarContainer{
+  display: none;
+}
+
+.btn-danger{
+  display: none;
+}

@@ -78,7 +78,7 @@
             <div class="card" style="background-color: #114380;">
                 <div class="card-header bg-light text-center">Formulario</div>
                 <div class="card-body">
-                    <form>
+                    <form class="formContainer">
                         <div class="campoInput" id="emailInputContainer">
                             <i class="fa-solid fa-user"></i>
                             <select id="tipo_tramite" class="inputSelectClass text-secondary">
@@ -108,20 +108,33 @@
                         </div>
                         <div class="campoInput" id="emailInputContainer">
                             <i class="fa-solid fa-user"></i>
-                            <select id="enero" class="inputSelectClass text-secondary">
-                                <option value="">Genero</option>
-                            </select>
-                        </div>
-                        <div class="campoInput" id="emailInputContainer">
-                            <i class="fa-solid fa-user"></i>
                             <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="inputClass inputDateClass">
                         </div>
-                        <div class="bottomContent">
-                            <div class="col-11 d-flex justify-content-end">
-                                <input type="submit" class="btn btn-xs btn-success" value="Siguiente">
-                            </div>
-                        </div>
                     </form>
+
+                    <div class="calendarContainer">
+                        <div id="calendario">
+                            <div class="cabecera">
+                                <button id="prevButton"><i class="fa-solid fa-arrow-left"></i></button>
+                                <span id="mesActual"></span>
+                                <button id="nextButton"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                            <div class="dias-container"></div>
+                        </div>
+                    </div>
+
+                    <div class="messageContainer">
+
+                    </div>
+
+                    <div class="bottomContent">
+                        <div class=" d-flex ">
+                            <input type="submit" class="btn btn-xs btn-success" value="Siguiente">
+                        </div>
+                        <div class=" d-flex ">
+                            <input type="submit" class="btn btn-xs btn-danger" value="Volver">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -166,6 +179,8 @@
     <!--SCRIPTS-->
     <script src="../scripts/script.js"></script>
     <script src="../scripts/login.js"></script>
+    <script src="../scripts/home.js"></script>
+    <script src="../scripts/form.js"></script>
 
     <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/dc0786cc41.js" crossorigin="anonymous"></script>
