@@ -20,6 +20,17 @@
   #tipo_documento, .inputSelectClass{
     color: rgba(255, 255, 255, 0.732) !important;
 }
+
+.spinner-border {
+  --bs-spinner-width: 2rem;
+  --bs-spinner-height: 2rem;
+  --bs-spinner-vertical-align: -0.125em;
+  --bs-spinner-border-width: none !important;
+  --bs-spinner-animation-speed:none !important;
+  --bs-spinner-animation-name: spinner-border;
+  border: var(--bs-spinner-border-width) solid currentcolor;
+  border-right-color: transparent;
+}
   
   .inputSelectClass:focus {
     outline: none;
@@ -214,4 +225,93 @@
 
 .circulo:hover {
   background-color: var(--color-naranja);
+}
+
+.btn-confirmar{
+  display: none;
+  width: 100px;
+}
+
+.messageContainer{
+  display: none;
+}
+
+.titleH2{
+  text-align: center;
+  color: #fff;
+}
+
+.titleH4{
+  color: #fff;
+}
+
+.textContainer ul{
+  list-style: none;
+  padding: 0;
+  color: #fff;
+}
+
+.Datos,
+.Confirmacion {
+  display: none;
+}
+
+.card-header{
+  font-size: 14px;
+}
+
+.card{
+  border-radius: 20px;
+}
+
+
+.messageContainer {
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.titleH2 {
+  color: #ffffff;
+}
+
+.titleH4 {
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.textContainer {
+  margin-top: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bullet {
+  width: 15px;
+  height: 15px;
+  background-color: #3498db;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.content {
+  flex: 1;
+}
+
+p {
+  margin: 0;
+}
+
+.name, .tramite, .date {
+  font-weight: bold;
+  border: 2px solid #3498db;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ecf0f1;
+  color: #333;
 }
