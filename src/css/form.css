@@ -348,3 +348,7 @@ p > span{
   padding-right: 30px;
   min-height: 50px;
 }
+
+#formulario{
+  width: 90% !important;
+}
