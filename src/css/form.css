@@ -237,12 +237,15 @@
 }
 
 .titleH2{
-  text-align: center;
+  text-align: start;
   color: #fff;
+  font-size: 1.3em;
 }
 
 .titleH4{
+  text-align: start;
   color: #fff;
+  font-size: 1.1em;
 }
 
 .textContainer ul{
@@ -292,26 +295,31 @@
 }
 
 .bullet {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background-color: #3498db;
   border-radius: 50%;
   margin-right: 10px;
 }
 
-.content {
+/*.content {
   flex: 1;
-}
+}*/
 
 p {
   margin: 0;
 }
 
 .name, .tramite, .date {
-  font-weight: bold;
-  border: 2px solid #3498db;
-  padding: 10px;
+  font-weight: 1em;
+  padding: 5px;
+  /*border: 2px solid #3498db;
   border-radius: 5px;
-  background-color: #ecf0f1;
-  color: #333;
+  background-color: #ecf0f1;*/
+  color: #ffffff;
+  text-align: start;
+}
+
+p > span{
+  font-weight: bold;
 }
