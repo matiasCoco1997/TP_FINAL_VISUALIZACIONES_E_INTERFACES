@@ -3,8 +3,10 @@
     border: none;
     outline: none;
     margin: 0 auto;
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: left;
 
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -13,8 +15,203 @@
   /* Alineación del dropdown */
   right: 0;
   }
+
+  #tipo_tramite,
+  #tipo_documento, .inputSelectClass{
+    color: rgba(255, 255, 255, 0.732) !important;
+}
   
   .inputSelectClass:focus {
     outline: none;
   }
 
+.progress-bar{
+  width: 25%;
+}
+
+.campoInput{
+  width: 100%;
+  text-align: left;
+  flex-wrap: nowrap !important;
+}
+
+.campoInput i {
+  padding-right: 15px;
+}
+
+.inputClass{
+  text-align: left !important;
+  width: 100% !important;
+
+}
+
+.inputClass::placeholder, #fecha_nacimiento::placeholder {
+  color: rgba(255, 255, 255, 0.732) !important;
+}
+
+.inputDateClass{
+  color:  rgba(255, 255, 255, 0.732) !important;
+}
+
+.bottomContent{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.tab{
+  text-align: center;
+  width: 100px;
+}
+
+.tabDate{
+  width: 100px;
+  text-align: left;
+}
+
+
+
+/* calendario */
+
+
+.calendarContainer{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#calendario {
+  
+  margin: auto;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+  max-width: 400px;
+  /*min-height: 300px;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecera {
+  text-align: center;
+  padding: 10px;
+  background-color:var(--color-pagina-actual);
+  color: #fff; 
+  font-weight: bold;
+  border-radius: 10px 10px 0 0; 
+}
+
+.dias-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 250px;
+  color: var(--color-azul);
+  font-weight: bold;
+}
+
+.dia {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 14.2%;
+  min-height: 30px;
+}
+
+.dia.nombre-dia {
+  font-weight: bold;
+}
+
+.dia.vacio {
+  visibility: hidden;
+}
+
+.dia.verde {
+  background-color:  var(--color-pagina-actual);
+  color: #fff;
+}
+
+.dia.verde:hover {
+  cursor: pointer;
+}
+
+#prevButton,
+#nextButton {
+  background-color:  var(--color-azul);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 10%;
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+
+#prevButton:hover{
+  background-color: var(--color-naranja);
+}
+
+#nextButton:hover{
+  background-color: var(--color-naranja);
+}
+
+.calendarContainer{
+  display: none;
+}
+
+.btn-danger{
+  display: none;
+}
+
+.link-menu a {
+  display: flex !important;
+  align-items: center;
+  height: 100%;
+}
+
+.exit {
+  padding: 0px !important;
+  margin-right: 30px;
+  margin-left: 10px;
+}
+
+.exit:hover {
+  background-color: var(--color-azul) !important;
+}
+
+.exit i {
+  font-size: 20px;
+}
+
+.exit i:hover {
+  color: red;
+}
+
+.usuario-nav {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0px !important;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.usuario-nav:hover {
+  background-color: var(--color-azul) !important;
+}
+
+.circulo {
+  width: 40px;
+  height: 40px;
+  background-color: #3498db;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circulo:hover {
+  background-color: var(--color-naranja);
+}

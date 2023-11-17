@@ -85,7 +85,7 @@ main {
 
 .title {
     color: var(--color-blanco-tipografia);
-    text-align: center;
+    text-align: start;
     margin-bottom: 20px;
     font-size: 1.8em;
 }
@@ -106,10 +106,10 @@ main {
 .cabecera {
     text-align: center;
     padding: 10px;
-    background-color:var(--color-azul);
-    color: #fff; 
+    background-color: var(--color-azul);
+    color: #fff;
     font-weight: bold;
-    border-radius: 10px 10px 0 0; 
+    border-radius: 10px 10px 0 0;
 }
 
 .dias-container {
@@ -148,7 +148,7 @@ main {
 
 #prevButton,
 #nextButton {
-    background-color:  var(--color-pagina-actual);
+    background-color: var(--color-pagina-actual);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -159,11 +159,96 @@ main {
 }
 
 
-#prevButton:hover{
+#prevButton:hover {
     background-color: var(--color-naranja);
 }
 
-#nextButton:hover{
+#nextButton:hover {
     background-color: var(--color-naranja);
 }
 
+.container-main {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contenedor-cajas {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+}
+
+.caja {
+    background-color: #f0f0f0;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items:start;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 10px;
+    transition: 0.3s all;
+    flex-direction: column;
+}
+
+
+.caja-enlace{
+    text-decoration: none;
+    box-shadow: 5px 5px 10px #000000;
+}
+.caja:hover {
+    transform: translateY(-9px);
+    background-color: #BAD9FF;
+}
+
+.icono-caja{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.material-symbols-outlined{
+    font-size: 34px;
+    color: #000000;
+}
+
+.texto-caja {
+    margin-left: 10px;
+    border: solid 1px ;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+    font-size: 0.9em;
+    color: #f0f0f0;
+    background-color: var(--color-azul);
+}
+
+.ingresar {
+    width: 380px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #BAD9FF;
+}
+
+.title-ingresar {
+    font-size: xx-large;
+}
+
+.descripcion-ingresar {
+    width: 90%;
+    font-size: 1.2rem;
+    margin-bottom: 150px;
+}
+
+.boton-ingresar {
+    text-decoration: none;
+    background-color: var(--color-azul);
+    padding: 10px;
+    color: #f0f0f0;
+    font-weight: bold;
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
+}
