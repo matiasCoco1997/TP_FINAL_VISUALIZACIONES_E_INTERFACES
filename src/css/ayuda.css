@@ -25,7 +25,18 @@ main {
 .mainclass h1 {
     color: white;
     text-align: center;
-    margin-bottom: 5px; /* Espaciado entre h1 y p */
+    margin-top:20px;
+    margin-bottom: 40px; /* Espaciado entre h1 y p */
+}
+
+
+h1{
+    font-size: 40px;
+
+}
+h2{
+    font-size: 35px;
+
 }
 
 .mainclass p {
@@ -36,7 +47,7 @@ main {
     background-color: rgba(255, 255, 255, 0.4); /* Fondo opaco blanco */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 50px;
+    padding: 20px 0px 20px 40px;
     margin-top: 20px;
 }
 
@@ -62,7 +73,7 @@ main {
 
 .requisitos li::before {
     content: '\2713'; /* Código de tilde */
-    color: blue; /* Color celeste */
+    color: blue; 
     font-size: 20px;
     margin-right: 5px;
     position: absolute;
@@ -74,30 +85,86 @@ main {
     text-decoration: underline; 
 }
 
+ol {
+    counter-reset: my-counter;
+    list-style-type: none;
+    padding: 0;
+}
+
+.pasos li {
+    /*background-color: rgba(255, 255, 255, 0.4); */
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex; 
+    flex-direction: row; 
+}
+
+
+.pasos li::before {
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px; 
+    /*background-color: #3498db;*/
+    color: #3498db;
+    /*color: #114380;*/
+
+    text-align: center;
+    border-radius: 50%;
+    /*margin-right: 10px;*/
+    /*padding:5px;*/
+    font-size: 60px;
+    font-weight: bold;
+    order: -1; 
+}
+
+
 .pasos {
+    
+    margin-left: 20px;
     max-width: 80%;
     margin-top: 20px;
     display: flex;
-    flex-direction: column; /* Configurar para una columna */
+    flex-direction: column; 
 }
 
 .pasos .cada-item {
+    
+
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left:10px;
+}
+
+.pasos h2{
     margin-bottom: 20px;
 }
 
 .pasos h3 {
     font-weight: bold;
+    font-size: 28px;
+
 }
 
 .pasos p {
     margin-top: 5px;
+    margin-left: 10px;
 }
 
-a {
-    color: #3498db; /* Color azul para los enlaces */
+.pasos a {
+    color: rgb(255, 255, 255); /* Color azul para los enlaces */
     text-decoration: underline; 
+    font-weight: bold;
+
 }
 
-a:hover {
+.pasos a:hover {
+    color: rgb(0, 187, 255); 
     text-decoration: none; 
 }
