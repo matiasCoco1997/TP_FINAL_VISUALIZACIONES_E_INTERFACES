@@ -1,11 +1,3 @@
-
-/********************************************************************************************************/
-NAV CUANDO EL USUARIO ESTA LOGUEADO:
-
-1 - Modificar nav para que se vea el usuario el nombre o algo asi cuando te logueas arriba a la derecha (solo vista escritorio).
-    En el caso de que sea pantalla celular o pantalla tablet dejar la hamburguesa con una opcion que sea "ver perfil".
-
-
 /********************************************************************************************************/
 PANTALLA HOME CUANDO TE LOGUEAS:
 

@@ -46,10 +46,21 @@
 
 
             <ul class="lista-nav">
-                <li class="link-menu"><a href="../index.html">Inicio</a></li>
-                <li class="link-menu"><a href="#" class="actualPage">Iniciar Sesión</a></li>
-                <li class="link-menu"><a href="registrarse.html">Registrarse</a></li>
-                <li class="link-menu"><a href="ayuda.html">Ayuda</a></li>
+
+                <li class="link-menu" id="usuario-nav">
+                    <a href="./perfil.html" class="usuario-nav">
+                        <div class="circulo">
+                            <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="link-menu" id="exit">
+                    <a href="./inciar_sesion.html" class="exit">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+                </li>
+
             </ul>
 
         </nav>
@@ -71,57 +82,94 @@
                 </div>
             </div>
             <div class="d-flex justify-content-lg-between mb-3" style="color: aliceblue;">
-                <div class="">Tramite</div>
-                <div class="">Fecha</div>
-                <div class="">Confirmación</div>
+                <div class="tabDate">Datos</div>
+                <div class="tab">Fecha</div>
+                <div class="tab">Confirmación</div>
             </div>
             <div class="card" style="background-color: #114380;">
-                <div class="card-header bg-light text-center">Formulario</div>
+                <div class="card-header bg-light text-center Datos">Datos</div>
+                <div class="card-header bg-light text-center Fecha">Fecha</div>
+                <div class="card-header bg-light text-center Confirmacion">Confirmacion</div>
                 <div class="card-body">
-                    <form>
+                    <form class="formContainer">
                         <div class="campoInput" id="emailInputContainer">
                             <i class="fa-solid fa-user"></i>
                             <select id="tipo_tramite" class="inputSelectClass text-secondary">
-                                <option value="">(Tipo de tramite)</option>
+                                <option value="">Tipo de tramite</option>
                             </select>
                         </div>
                         <div class="campoInput" id="emailInputContainer">
                             <i class="fa-solid fa-user"></i>
                             <select id="tipo_documento" class="inputSelectClass text-secondary">
-                                <option value="">(Tipo de documento)</option>
+                                <option value="">Tipo de documento</option>
                             </select>
                         </div>
                         <div class="campoInput" id="emailInputContainer">
                             <i class="fa-solid fa-user"></i>
                             <input type="text" name="numero_documento" id="numero_documento"
-                                class=" inputClass text-center" placeholder="(N° de documento)">
+                                class=" inputClass text-center" placeholder="N° de documento">
                         </div>
                         <div class="campoInput" id="emailInputContainer">
                             <i class="fa-solid fa-user"></i>
                             <input type="text" name="nombre" id="nombre" class="inputClass text-center"
-                                placeholder="(Nombre)">
+                                placeholder="Nombre">
                         </div>
                         <div class="campoInput" id="emailInputContainer">
                             <i class="fa-solid fa-user"></i>
                             <input type="text" name="apellido" id="apellido" class="inputClass text-center"
-                                placeholder="(Apellido)">
-                        </div>
-                        <div class="campoInput" id="emailInputContainer">
-                            <i class="fa-solid fa-user"></i>
-                            <select id="enero" class="inputSelectClass text-secondary">
-                                <option value="">(Genero)</option>
-                            </select>
+                                placeholder="Apellido">
                         </div>
                         <div class="campoInput" id="emailInputContainer">
                             <i class="fa-solid fa-user"></i>
                             <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="inputClass inputDateClass">
                         </div>
-                        <div class="row mt-4">
-                            <div class="col-11 d-flex justify-content-end">
-                                <input type="submit" class="btn btn-xs btn-success" value="Siguiente">
+                    </form>
+
+                    <div class="calendarContainer">
+                        <div id="calendario">
+                            <div class="cabecera">
+                                <button id="prevButton"><i class="fa-solid fa-arrow-left"></i></button>
+                                <span id="mesActual"></span>
+                                <button id="nextButton"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                            <div class="dias-container"></div>
+                        </div>
+                    </div>
+
+                    <div class="messageContainer">
+                        <h2 class="titleH2">Muchas gracias por visitarnos</h2>
+                        <h4 class="titleH4">Por favor confirme su turno</h4>
+                        <div class="textContainer">
+                            <div class="item">
+                                <div class="bullet"></div>
+                                <div class="content">
+                                    <p class="name">Facundo Ortega</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="bullet"></div>
+                                <div class="content">
+                                    <p class="tramite">Renovar Registro</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="bullet"></div>
+                                <div class="content">
+                                    <p class="date">Miércoles 22 de noviembre</p>
+                                </div>
                             </div>
                         </div>
-                    </form>
+                    </div>
+
+                    <div class="bottomContent">
+                        <div class=" d-flex ">
+                            <input type="submit" class="btn btn-xs btn-success btn-siguiente" value="Siguiente">
+                            <input class="btn btn-xs btn-success btn-confirmar" value="Confirmar">
+                        </div>
+                        <div class=" d-flex ">
+                            <input type="submit" class="btn btn-xs btn-danger" value="Volver">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -166,6 +214,8 @@
     <!--SCRIPTS-->
     <script src="../scripts/script.js"></script>
     <script src="../scripts/login.js"></script>
+    <script src="../scripts/home.js"></script>
+    <script src="../scripts/form.js"></script>
 
     <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/dc0786cc41.js" crossorigin="anonymous"></script>

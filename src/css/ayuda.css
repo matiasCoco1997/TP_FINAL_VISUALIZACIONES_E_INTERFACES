@@ -1,0 +1,170 @@
+main {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/imgs_index/sacando_el_registro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.fondo{
+    width:80%;
+}
+
+.mainclass {
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width:100%;
+    color: white; /* Texto en blanco */
+}
+
+.mainclass h1 {
+    color: white;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 40px; /* Espaciado entre h1 y p */
+}
+
+
+h1{
+    font-size: 40px;
+
+}
+h2{
+    font-size: 35px;
+
+}
+
+.mainclass p {
+    margin-top: 0; /* Eliminar el margen superior por defecto */
+}
+
+.requisitos {
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo opaco blanco */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0px 20px 40px;
+    margin-top: 20px;
+}
+
+.requisitos h2 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    
+
+}
+
+.requisitos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.requisitos li {
+    margin-bottom: 10px;
+    position: relative;
+    margin-bottom: 15px;
+
+}
+
+.requisitos li::before {
+    content: '\2713'; /* Código de tilde */
+    color: blue; 
+    font-size: 20px;
+    margin-right: 5px;
+    position: absolute;
+    left: -20px;
+}
+
+.requisitos a{
+    color: blue; /* Color azul para los enlaces */
+    text-decoration: underline; 
+}
+
+ol {
+    counter-reset: my-counter;
+    list-style-type: none;
+    padding: 0;
+}
+
+.pasos li {
+    /*background-color: rgba(255, 255, 255, 0.4); */
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex; 
+    flex-direction: row; 
+}
+
+
+.pasos li::before {
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px; 
+    /*background-color: #3498db;*/
+    color: #3498db;
+    /*color: #114380;*/
+
+    text-align: center;
+    border-radius: 50%;
+    /*margin-right: 10px;*/
+    /*padding:5px;*/
+    font-size: 60px;
+    font-weight: bold;
+    order: -1; 
+}
+
+
+.pasos {
+    
+    margin-left: 20px;
+    max-width: 80%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.pasos .cada-item {
+    
+
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left:10px;
+}
+
+.pasos h2{
+    margin-bottom: 20px;
+}
+
+.pasos h3 {
+    font-weight: bold;
+    font-size: 28px;
+
+}
+
+.pasos p {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.pasos a {
+    color: rgb(255, 255, 255); /* Color azul para los enlaces */
+    text-decoration: underline; 
+    font-weight: bold;
+
+}
+
+.pasos a:hover {
+    color: rgb(0, 187, 255); 
+    text-decoration: none; 
+}
