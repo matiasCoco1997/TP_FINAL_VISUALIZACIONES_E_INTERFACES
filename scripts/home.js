@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Limpiar el contenedor antes de mostrar el nuevo mes
         diasContainer.innerHTML = '';
 
-        var diasSemana = ['Dom', 'Lun', 'Mar', 'Miér', 'Jue', 'Vier', 'Sáb'];
+        var diasSemana = ['D', 'L', 'M', 'M', 'J', 'V', 'S'];
 
         // Agregar los nombres de los días de la semana
         diasSemana.forEach(function (nombreDia) {

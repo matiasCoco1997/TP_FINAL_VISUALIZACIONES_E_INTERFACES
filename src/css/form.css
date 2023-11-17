@@ -99,7 +99,6 @@
   overflow: hidden;
   margin-top: 10px;
   max-width: 400px;
-  /*min-height: 300px;*/
   display: flex;
   flex-direction: column;
 }
@@ -127,6 +126,7 @@
   padding: 10px;
   border: 1px solid #ccc;
   width: 14.2%;
+  font-size: 1em;
   min-height: 30px;
 }
 
@@ -153,7 +153,7 @@
   color: #fff;
   border: none;
   border-radius: 5px;
-  width: 10%;
+  width: 15%;
   padding: 10px;
   margin: 0 5px;
   cursor: pointer;
@@ -267,7 +267,6 @@
   border-radius: 20px;
 }
 
-
 .messageContainer {
   width: 100%;
   border-radius: 10px;
@@ -322,4 +321,30 @@ p {
 
 p > span{
   font-weight: bold;
+}
+
+
+/*AGREGAR ESTE CODIGO EN TODAS LAS PAGINAS QUE ESTAS LOGUEADO*/
+.menu-btn{
+  display: none;
+}
+
+.lista-nav{
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+.lista-nav li{
+  width: auto;
+  min-height: 50px;
+}
+
+.lista-nav li a{
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  min-height: 50px;
 }
