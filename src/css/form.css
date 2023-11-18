@@ -193,16 +193,21 @@
   display: none;
 }
 
+.btn-home {
+  display: block;
+}
+
 .link-menu a {
   display: flex !important;
   align-items: center;
   height: 100%;
+  margin-left: 10px;
+  margin-right: 20px;
 }
 
 .exit {
   padding: 0px !important;
-  margin-right: 30px;
-  margin-left: 10px;
+  padding-left: 10px;
 }
 
 .exit:hover {
@@ -222,8 +227,6 @@
   align-items: center !important;
   justify-content: center !important;
   padding: 0px !important;
-  margin-left: 5px;
-  margin-right: 10px;
 }
 
 .usuario-nav:hover {
@@ -363,6 +366,7 @@ p>span {
 .lista-nav li {
   width: auto;
   min-height: 50px;
+  display: flex;
 }
 
 .lista-nav li a {
@@ -374,4 +378,12 @@ p>span {
 
 #formulario {
   width: 90% !important;
+}
+
+.iconoError{
+  color: #FF9999 !important;
+}
+
+.iconoBlanco{
+  color: white !important;
 }

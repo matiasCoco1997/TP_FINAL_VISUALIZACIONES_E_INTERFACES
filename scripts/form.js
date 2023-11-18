@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var pasoActual = 1;
     var succesBTN = document.querySelector('.btn-siguiente');
     var confirmarBTN = document.querySelector('.btn-confirmar');
-    var dangerBTN =   document.querySelector('.btn-danger');
+    var dangerBTN =   document.querySelector('#volver');
 
 
     var camposVacios = false;
@@ -13,7 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var ApellidoVacio = false;
     var localidadVacia = false;
 
+    
+
     succesBTN.addEventListener('click', function () {
+
+        var camposVacios = false;
 
         var inputTipoDeTramite =   document.querySelector('#tipo_tramite').value;
         var inputNumeroDeDocumento =   document.querySelector('#numero_documento').value;
@@ -24,37 +28,63 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if(inputTipoDeTramite === "0"){
             camposVacios = true;
-            tramiteVacio = true;
+            document.getElementById("iconoTramite").classList.remove("iconoBlanco");
+            document.getElementById("iconoTramite").classList.add("iconoError");
+            document.getElementById("campoInputTipoTramite").style.borderBottom = "2px solid #FF9999";
+        } else{
+            document.getElementById("campoInputTipoTramite").style.borderBottom = "2px solid white";
+            document.getElementById("iconoTramite").classList.add("iconoBlanco");
+            
         }
 
         if(inputNumeroDeDocumento === ''){
             camposVacios = true;
-            documentoVacio = true;
+            document.getElementById("iconoDni").classList.remove("iconoBlanco");
+            document.getElementById("iconoDni").classList.add("iconoError");
+            document.getElementById("campoInputDni").style.borderBottom = "2px solid #FF9999";
+        } else{
+            document.getElementById("campoInputDni").style.borderBottom = "2px solid white";
+            document.getElementById("iconoDni").classList.add("iconoBlanco");           
         }
-
-        console.log("input dni = " + inputNumeroDeDocumento);
 
         if(inputNombreUsuario === ""){
             camposVacios = true;
-            nombreVacio = true;
+            document.getElementById("iconoNombre").classList.remove("iconoBlanco");
+            document.getElementById("iconoNombre").classList.add("iconoError");
+            document.getElementById("campoInputNombre").style.borderBottom = "2px solid #FF9999";
+
+        } else{
+            document.getElementById("campoInputNombre").style.borderBottom = "2px solid white";
+            document.getElementById("iconoNombre").classList.add("iconoBlanco");               
         }
 
         if(inputApellidoUsuario === ""){
             camposVacios = true;
-            ApellidoVacio = true;
+            document.getElementById("iconoApellido").classList.remove("iconoBlanco");
+            document.getElementById("iconoApellido").classList.add("iconoError");
+            document.getElementById("campoInputApellido").style.borderBottom = "2px solid #FF9999";
+        } else{
+            document.getElementById("campoInputApellido").style.borderBottom = "2px solid white";
+            document.getElementById("iconoApellido").classList.add("iconoBlanco");                 
         }
-
+        
         if(inputLocalidad === "0"){
             camposVacios = true;
-            localidadVacia = true;
+            document.getElementById("iconoLocalidad").classList.remove("iconoBlanco");
+            document.getElementById("iconoLocalidad").classList.add("iconoError");
+            document.getElementById("campoInputLocalidad").style.borderBottom = "2px solid #FF9999";
+        } else{
+            document.getElementById("campoInputLocalidad").style.borderBottom = "2px solid white";
+            document.getElementById("iconoLocalidad").classList.add("iconoBlanco");
         }
 
         if(camposVacios == false){
 
-            ocument.getElementById("campos-error").style.display = "none";
+            document.getElementById("campos-error").style.display = "none";
 
             if (pasoActual === 1) {
                 dangerBTN.style.display="flex"
+                document.querySelector('.btn-home').style.display = 'none';
                 var progressBar = document.querySelector(".progress-bar")
                 progressBar.style.width = "50%"
                 document.querySelector('.formContainer').style.display = 'none';
@@ -64,6 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 pasoActual = 2;
             } else if (pasoActual === 2) {
                 dangerBTN.style.display="flex"
+                document.querySelector('.btn-home').style.display = 'none';
                 var progressBar = document.querySelector(".progress-bar")
                 document.querySelector('.Fecha').style.display = 'none';
                 document.querySelector('.Confirmacion').style.display = 'block';
@@ -76,44 +107,15 @@ document.addEventListener('DOMContentLoaded', function () {
             } 
 
         } else{
-
-            if(tramiteVacio){
-                console.log("tramite vacio");
-                document.getElementById("campos-error").style.display = "block";
-                document.getElementById("campoInputTipoTramite").style.borderBottom = "2px solid #FF9999";
-            }
-
-            if(documentoVacio){
-                console.log("documento vacio");
-                document.getElementById("campos-error").style.display = "block";
-                document.getElementById("campoInputDni").style.borderBottom = "2px solid #FF9999";
-            }
-
-            if(nombreVacio){
-                console.log("nombre vacio");
-                document.getElementById("campos-error").style.display = "block";
-                document.getElementById("campoInputNombre").style.borderBottom = "2px solid #FF9999";
-            }
-
-            if(ApellidoVacio){
-                console.log("apellido vacio");
-                document.getElementById("campos-error").style.display = "block";
-                document.getElementById("campoInputApellido").style.borderBottom = "2px solid #FF9999";
-            }
-
-            if(localidadVacia){
-                console.log("localidad vacio");
-                document.getElementById("campos-error").style.display = "block";
-                document.getElementById("campoInputLocalidad").style.borderBottom = "2px solid #FF9999";
-            }
+            document.getElementById("campos-error").style.display = "block";
         }
 
-
-       
     });
 
     dangerBTN.addEventListener('click', function () {
+
         if (pasoActual === 2) {
+            document.querySelector('.btn-home').style.display = 'block';
             var progressBar = document.querySelector(".progress-bar")
             progressBar.style.width = "25%"
             document.querySelector('.calendarContainer').style.display = 'none';
@@ -139,7 +141,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     confirmarBTN.addEventListener("click", function (e) {
         e.preventDefault()
-
 
         $(".loading").css("display", "flex"); 
         setTimeout(function () {
