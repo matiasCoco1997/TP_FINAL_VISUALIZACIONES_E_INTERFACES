@@ -27,10 +27,12 @@ document.addEventListener('DOMContentLoaded', function () {
             tramiteVacio = true;
         }
 
-        if(inputNumeroDeDocumento === ""){
+        if(inputNumeroDeDocumento === ''){
             camposVacios = true;
             documentoVacio = true;
         }
+
+        console.log("input dni = " + inputNumeroDeDocumento);
 
         if(inputNombreUsuario === ""){
             camposVacios = true;
@@ -48,6 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if(camposVacios == false){
+
+            ocument.getElementById("campos-error").style.display = "none";
 
             if (pasoActual === 1) {
                 dangerBTN.style.display="flex"
@@ -72,27 +76,35 @@ document.addEventListener('DOMContentLoaded', function () {
             } 
 
         } else{
-            console.log("Hay campos vacios");
 
             if(tramiteVacio){
                 console.log("tramite vacio");
                 document.getElementById("campos-error").style.display = "block";
+                document.getElementById("campoInputTipoTramite").style.borderBottom = "2px solid #FF9999";
             }
 
-            if(inputNumeroDeDocumento){
+            if(documentoVacio){
                 console.log("documento vacio");
+                document.getElementById("campos-error").style.display = "block";
+                document.getElementById("campoInputDni").style.borderBottom = "2px solid #FF9999";
             }
 
             if(nombreVacio){
                 console.log("nombre vacio");
+                document.getElementById("campos-error").style.display = "block";
+                document.getElementById("campoInputNombre").style.borderBottom = "2px solid #FF9999";
             }
 
             if(ApellidoVacio){
                 console.log("apellido vacio");
+                document.getElementById("campos-error").style.display = "block";
+                document.getElementById("campoInputApellido").style.borderBottom = "2px solid #FF9999";
             }
 
             if(localidadVacia){
                 console.log("localidad vacio");
+                document.getElementById("campos-error").style.display = "block";
+                document.getElementById("campoInputLocalidad").style.borderBottom = "2px solid #FF9999";
             }
         }
 

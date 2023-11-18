@@ -78,7 +78,7 @@
             <div class="mb-1 mt-2">
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ></div>
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
 
@@ -92,14 +92,14 @@
                 <div class="card-header bg-light text-center Datos">Datos</div>
                 <div class="card-header bg-light text-center Fecha">Fecha</div>
                 <div class="card-header bg-light text-center Confirmacion">Confirmacion</div>
-                
+
                 <div class="card-body">
 
                     <form class="formContainer">
 
-                        <div class="campoInput">
+                        <div class="campoInput" id="campoInputTipoTramite">
                             <i class="fa-solid fa-file"></i>
-                            <select id="tipo_tramite" class="inputSelectClass text-secondary">
+                            <select id="tipo_tramite" class="inputSelectClass text-secondary" required>
                                 <option value="0">Seleccione un tipo de tramite</option>
                                 <option value="1">Renovación de licencia</option>
                                 <option value="2">Duplicado de licencia de conducir</option>
@@ -115,26 +115,28 @@
                             </select>
                         </div>-->
 
-                        <div class="campoInput inputNumber">
+                        <div class="campoInput inputNumber" id="campoInputDni">
                             <i class="fa-solid fa-id-card"></i>
                             <input type="number" name="numero_documento" id="numero_documento"
-                                class=" inputClass text-center" placeholder="N° de documento">
+                                class=" inputClass text-center" placeholder="N° de documento" required>
                         </div>
 
-                        <div class="campoInput">
+                        <div class="campoInput" id="campoInputNombre">
                             <i class="fa-solid fa-user"></i>
-                            <input type="text" name="nombre" id="nombre" class="inputClass text-center" placeholder="Nombre">
+                            <input type="text" name="nombre" id="nombre" class="inputClass text-center"
+                                placeholder="Nombre" required>
                         </div>
 
-                        
-                        <div class="campoInput">
+
+                        <div class="campoInput" id="campoInputApellido">
                             <i class="fa-solid fa-user"></i>
-                            <input type="text" name="apellido" id="apellido" class="inputClass text-center" placeholder="Apellido">
+                            <input type="text" name="apellido" id="apellido" class="inputClass text-center"
+                                placeholder="Apellido" required>
                         </div>
 
-                        <div class="campoInput">
+                        <div class="campoInput" id="campoInputLocalidad">
                             <i class="fa-solid fa-location-dot"></i>
-                            <select id="localidad" class="inputSelectClass text-secondary">
+                            <select id="localidad" class="inputSelectClass text-secondary" required>
                                 <option value="0">Seleccione una localidad</option>
                                 <option value="1">San Justo</option>
                                 <option value="2">Ramos Mejía</option>
@@ -152,7 +154,8 @@
                             <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="inputClass inputDateClass">
                         </div>
                         -->
-                        <span class="error-message" id="campos-error" style="display: none; width: 100%;">Algunos campos se encuentran vacíos. Complétalos para continuar.</span>
+                        <span class="error-message" id="campos-error" style="display: none; width: 100%;">Algunos campos
+                            se encuentran vacíos, complétalos para continuar.</span>
                     </form>
 
                     <div class="calendarContainer">
