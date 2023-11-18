@@ -7,12 +7,11 @@
   align-items: center;
   width: 100%;
   text-align: left;
-  /* Alineación del dropdown */
-  right: 0;
 }
 
 .inputSelectClass option {
-  background-color: var(--color-pagina-actual);
+  background-color: white;
+  color: var(--color-azul);
 }
 
 #numero_documento {
@@ -26,9 +25,7 @@
 #numero_documento::-webkit-inner-spin-button,
 #numero_documento::-webkit-outer-spin-button {
   -webkit-appearance: none;
-  /* Ocultar las flechas */
   margin: 0;
-  /* Eliminar cualquier margen */
 }
 
 #tipo_tramite,

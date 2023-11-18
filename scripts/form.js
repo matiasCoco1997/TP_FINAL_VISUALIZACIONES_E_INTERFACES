@@ -1,33 +1,103 @@
 document.addEventListener('DOMContentLoaded', function () {
     var pasoActual = 1;
-    var succesBTN = document.querySelector('.btn-siguiente')
-    var confirmarBTN = document.querySelector('.btn-confirmar')
-    var dangerBTN =   document.querySelector('.btn-danger')
+    var succesBTN = document.querySelector('.btn-siguiente');
+    var confirmarBTN = document.querySelector('.btn-confirmar');
+    var dangerBTN =   document.querySelector('.btn-danger');
 
+
+    var camposVacios = false;
     
+    var tramiteVacio = false;
+    var documentoVacio = false;
+    var nombreVacio = false;
+    var ApellidoVacio = false;
+    var localidadVacia = false;
 
     succesBTN.addEventListener('click', function () {
-        if (pasoActual === 1) {
-            dangerBTN.style.display="flex"
-            var progressBar = document.querySelector(".progress-bar")
-            progressBar.style.width = "50%"
-            document.querySelector('.formContainer').style.display = 'none';
-            document.querySelector('.Fecha').style.display = 'block';
-            document.querySelector('.Datos').style.display = 'none';
-            document.querySelector('.calendarContainer').style.display = 'flex';
-            pasoActual = 2;
-        } else if (pasoActual === 2) {
-            dangerBTN.style.display="flex"
-            var progressBar = document.querySelector(".progress-bar")
-            document.querySelector('.Fecha').style.display = 'none';
-            document.querySelector('.Confirmacion').style.display = 'block';
-            progressBar.style.width = "100%"
-            document.querySelector('.calendarContainer').style.display = 'none';
-            document.querySelector('.messageContainer').style.display = 'block';
-            pasoActual = 3;
-            succesBTN.style.display="none"
-            confirmarBTN.style.display = "flex"
-        } 
+
+        var inputTipoDeTramite =   document.querySelector('#tipo_tramite').value;
+        var inputNumeroDeDocumento =   document.querySelector('#numero_documento').value;
+        var inputNombreUsuario =   document.querySelector('#nombre').value;
+        var inputApellidoUsuario =   document.querySelector('#apellido').value;
+        var inputLocalidad =   document.querySelector('#localidad').value;
+
+
+        if(inputTipoDeTramite === "0"){
+            camposVacios = true;
+            tramiteVacio = true;
+        }
+
+        if(inputNumeroDeDocumento === ""){
+            camposVacios = true;
+            documentoVacio = true;
+        }
+
+        if(inputNombreUsuario === ""){
+            camposVacios = true;
+            nombreVacio = true;
+        }
+
+        if(inputApellidoUsuario === ""){
+            camposVacios = true;
+            ApellidoVacio = true;
+        }
+
+        if(inputLocalidad === "0"){
+            camposVacios = true;
+            localidadVacia = true;
+        }
+
+        if(camposVacios == false){
+
+            if (pasoActual === 1) {
+                dangerBTN.style.display="flex"
+                var progressBar = document.querySelector(".progress-bar")
+                progressBar.style.width = "50%"
+                document.querySelector('.formContainer').style.display = 'none';
+                document.querySelector('.Fecha').style.display = 'block';
+                document.querySelector('.Datos').style.display = 'none';
+                document.querySelector('.calendarContainer').style.display = 'flex';
+                pasoActual = 2;
+            } else if (pasoActual === 2) {
+                dangerBTN.style.display="flex"
+                var progressBar = document.querySelector(".progress-bar")
+                document.querySelector('.Fecha').style.display = 'none';
+                document.querySelector('.Confirmacion').style.display = 'block';
+                progressBar.style.width = "100%"
+                document.querySelector('.calendarContainer').style.display = 'none';
+                document.querySelector('.messageContainer').style.display = 'block';
+                pasoActual = 3;
+                succesBTN.style.display="none"
+                confirmarBTN.style.display = "flex"
+            } 
+
+        } else{
+            console.log("Hay campos vacios");
+
+            if(tramiteVacio){
+                console.log("tramite vacio");
+                document.getElementById("campos-error").style.display = "block";
+            }
+
+            if(inputNumeroDeDocumento){
+                console.log("documento vacio");
+            }
+
+            if(nombreVacio){
+                console.log("nombre vacio");
+            }
+
+            if(ApellidoVacio){
+                console.log("apellido vacio");
+            }
+
+            if(localidadVacia){
+                console.log("localidad vacio");
+            }
+        }
+
+
+       
     });
 
     dangerBTN.addEventListener('click', function () {

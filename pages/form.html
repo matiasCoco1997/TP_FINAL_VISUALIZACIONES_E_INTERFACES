@@ -97,7 +97,7 @@
 
                     <form class="formContainer">
 
-                        <div class="campoInput" id="emailInputContainer">
+                        <div class="campoInput">
                             <i class="fa-solid fa-file"></i>
                             <select id="tipo_tramite" class="inputSelectClass text-secondary">
                                 <option value="0">Seleccione un tipo de tramite</option>
@@ -115,26 +115,26 @@
                             </select>
                         </div>-->
 
-                        <div class="campoInput inputNumber" id="emailInputContainer">
+                        <div class="campoInput inputNumber">
                             <i class="fa-solid fa-id-card"></i>
                             <input type="number" name="numero_documento" id="numero_documento"
                                 class=" inputClass text-center" placeholder="N° de documento">
                         </div>
 
-                        <div class="campoInput" id="emailInputContainer">
+                        <div class="campoInput">
                             <i class="fa-solid fa-user"></i>
                             <input type="text" name="nombre" id="nombre" class="inputClass text-center" placeholder="Nombre">
                         </div>
 
                         
-                        <div class="campoInput" id="emailInputContainer">
+                        <div class="campoInput">
                             <i class="fa-solid fa-user"></i>
                             <input type="text" name="apellido" id="apellido" class="inputClass text-center" placeholder="Apellido">
                         </div>
 
-                        <div class="campoInput" id="emailInputContainer">
+                        <div class="campoInput">
                             <i class="fa-solid fa-location-dot"></i>
-                            <select id="tipo_tramite" class="inputSelectClass text-secondary">
+                            <select id="localidad" class="inputSelectClass text-secondary">
                                 <option value="0">Seleccione una localidad</option>
                                 <option value="1">San Justo</option>
                                 <option value="2">Ramos Mejía</option>
@@ -152,7 +152,7 @@
                             <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="inputClass inputDateClass">
                         </div>
                         -->
-
+                        <span class="error-message" id="campos-error" style="display: none; width: 100%;">Algunos campos se encuentran vacíos. Complétalos para continuar.</span>
                     </form>
 
                     <div class="calendarContainer">
