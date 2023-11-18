@@ -104,6 +104,9 @@
 
 
 .calendarContainer {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -145,10 +148,13 @@
   width: 14.2%;
   font-size: 1em;
   min-height: 30px;
+  color: #ccc;
+  background-color: #f0f0f0;
 }
 
 .dia.nombre-dia {
   font-weight: bold;
+  color: var(--color-pagina-actual);
 }
 
 .dia.vacio {
@@ -156,12 +162,27 @@
 }
 
 .dia.verde {
-  background-color: var(--color-pagina-actual);
-  color: #fff;
+  background-color:#fff;
+  color: black;
+}
+
+.azul{
+  color: #fff !important;
+  background-color: var(--color-pagina-actual) !important;
 }
 
 .dia.verde:hover {
   cursor: pointer;
+}
+
+#campoInputDate{
+  display: none;
+}
+
+.errorDay , .errorInputEmpty{
+  display: none;
+  color: #fff;
+  text-align: center;
 }
 
 #prevButton,

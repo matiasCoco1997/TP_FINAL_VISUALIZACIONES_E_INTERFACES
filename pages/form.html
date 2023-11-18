@@ -163,6 +163,21 @@
                             </div>
                             <div class="dias-container"></div>
                         </div>
+                        <p class="errorDay">Lo sentimos, ese dia no esta disponible</p>
+                        <div class="campoInput" id="campoInputDate">
+                            <i class="fa-solid fa-user-clock" id="iconoDate"></i>
+                            <select id="Date" class="inputSelectClass text-secondary" required>
+                                <option value="0">Seleccione el horario</option>
+                                <option value="1">12:00</option>
+                                <option value="2">12:30</option>
+                                <option value="3">13:00</option>
+                                <option value="4">13:30</option>
+                                <option value="5">14:30</option>
+                                <option value="6">15:00</option>
+                                <option value="7">15:30</option>
+                            </select>
+                        </div>
+                        <p class="errorInputEmpty">Debe seleccionar el dia y horario</p>
                     </div>
 
                     <div class="messageContainer">
@@ -245,7 +260,6 @@
     <!--SCRIPTS-->
     <script src="../scripts/script.js"></script>
     <script src="../scripts/login.js"></script>
-    <script src="../scripts/home.js"></script>
     <script src="../scripts/form.js"></script>
 
     <!--FONT AWESOME-->
