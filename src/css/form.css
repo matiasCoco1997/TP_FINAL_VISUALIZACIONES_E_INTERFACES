@@ -1,24 +1,40 @@
 .inputSelectClass {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    text-align: left;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  /*...*/
+  background-color: var(--color-azul);
+  border: none;
+  outline: none;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
   /* Alineación del dropdown */
   right: 0;
-  }
+}
 
-  #tipo_tramite,
-  #tipo_documento, .inputSelectClass{
-    color: rgba(255, 255, 255, 0.732) !important;
+.inputSelectClass option {
+  background-color: var(--color-pagina-actual);
+}
+
+#numero_documento {
+  -webkit-appearance: textfield;
+  /* Mostrar el input como un campo de texto normal */
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Estilos específicos para navegadores basados en Webkit (Chrome, Safari, etc.) */
+#numero_documento::-webkit-inner-spin-button,
+#numero_documento::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  /* Ocultar las flechas */
+  margin: 0;
+  /* Eliminar cualquier margen */
+}
+
+#tipo_tramite,
+#tipo_documento,
+.inputSelectClass {
+  color: rgba(255, 255, 255, 0.732) !important;
 }
 
 .spinner-border {
@@ -26,21 +42,21 @@
   --bs-spinner-height: 2rem;
   --bs-spinner-vertical-align: -0.125em;
   --bs-spinner-border-width: none !important;
-  --bs-spinner-animation-speed:none !important;
+  --bs-spinner-animation-speed: none !important;
   --bs-spinner-animation-name: spinner-border;
   border: var(--bs-spinner-border-width) solid currentcolor;
   border-right-color: transparent;
 }
-  
-  .inputSelectClass:focus {
-    outline: none;
-  }
 
-.progress-bar{
+.inputSelectClass:focus {
+  outline: none;
+}
+
+.progress-bar {
   width: 25%;
 }
 
-.campoInput{
+.campoInput {
   width: 100%;
   text-align: left;
   flex-wrap: nowrap !important;
@@ -50,49 +66,53 @@
   padding-right: 15px;
 }
 
-.inputClass{
+.inputClass {
   text-align: left !important;
   width: 100% !important;
 
 }
 
-.inputClass::placeholder, #fecha_nacimiento::placeholder {
+.inputClass::placeholder,
+#fecha_nacimiento::placeholder {
   color: rgba(255, 255, 255, 0.732) !important;
 }
 
-.inputDateClass{
-  color:  rgba(255, 255, 255, 0.732) !important;
+.inputDateClass {
+  color: rgba(255, 255, 255, 0.732) !important;
 }
 
-.bottomContent{
+.bottomContent {
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
 }
 
-.tab{
+.tab {
   text-align: center;
   width: 100px;
 }
 
-.tabDate{
+.tabDate {
   width: 100px;
   text-align: left;
 }
 
 
+.Fecha{
+  display: none;
+}
 
 /* calendario */
 
 
-.calendarContainer{
+.calendarContainer {
   width: 100%;
   margin-bottom: 20px;
 }
 
 #calendario {
-  
+
   margin: auto;
   background-color: #f7f7f7;
   border-radius: 10px;
@@ -106,10 +126,10 @@
 .cabecera {
   text-align: center;
   padding: 10px;
-  background-color:var(--color-pagina-actual);
-  color: #fff; 
+  background-color: var(--color-pagina-actual);
+  color: #fff;
   font-weight: bold;
-  border-radius: 10px 10px 0 0; 
+  border-radius: 10px 10px 0 0;
 }
 
 .dias-container {
@@ -139,7 +159,7 @@
 }
 
 .dia.verde {
-  background-color:  var(--color-pagina-actual);
+  background-color: var(--color-pagina-actual);
   color: #fff;
 }
 
@@ -149,7 +169,7 @@
 
 #prevButton,
 #nextButton {
-  background-color:  var(--color-azul);
+  background-color: var(--color-azul);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -160,19 +180,19 @@
 }
 
 
-#prevButton:hover{
+#prevButton:hover {
   background-color: var(--color-naranja);
 }
 
-#nextButton:hover{
+#nextButton:hover {
   background-color: var(--color-naranja);
 }
 
-.calendarContainer{
+.calendarContainer {
   display: none;
 }
 
-.btn-danger{
+.btn-danger {
   display: none;
 }
 
@@ -227,28 +247,28 @@
   background-color: var(--color-naranja);
 }
 
-.btn-confirmar{
+.btn-confirmar {
   display: none;
   width: 100px;
 }
 
-.messageContainer{
+.messageContainer {
   display: none;
 }
 
-.titleH2{
+.titleH2 {
   text-align: start;
   color: #fff;
   font-size: 1.3em;
 }
 
-.titleH4{
+.titleH4 {
   text-align: start;
   color: #fff;
   font-size: 1.1em;
 }
 
-.textContainer ul{
+.textContainer ul {
   list-style: none;
   padding: 0;
   color: #fff;
@@ -259,11 +279,15 @@
   display: none;
 }
 
-.card-header{
+.Datos{
+  display: block;
+}
+
+.card-header {
   font-size: 14px;
 }
 
-.card{
+.card {
   border-radius: 20px;
 }
 
@@ -309,7 +333,9 @@ p {
   margin: 0;
 }
 
-.name, .tramite, .date {
+.name,
+.tramite,
+.date {
   font-weight: 1em;
   padding: 5px;
   /*border: 2px solid #3498db;
@@ -319,17 +345,17 @@ p {
   text-align: start;
 }
 
-p > span{
+p>span {
   font-weight: bold;
 }
 
 
 /*AGREGAR ESTE CODIGO EN TODAS LAS PAGINAS QUE ESTAS LOGUEADO*/
-.menu-btn{
+.menu-btn {
   display: none;
 }
 
-.lista-nav{
+.lista-nav {
   display: flex !important;
   align-items: center;
   justify-content: flex-end;
@@ -337,18 +363,18 @@ p > span{
   width: 40%;
 }
 
-.lista-nav li{
+.lista-nav li {
   width: auto;
   min-height: 50px;
 }
 
-.lista-nav li a{
+.lista-nav li a {
   padding: 15px;
   padding-left: 30px;
   padding-right: 30px;
   min-height: 50px;
 }
 
-#formulario{
+#formulario {
   width: 90% !important;
 }

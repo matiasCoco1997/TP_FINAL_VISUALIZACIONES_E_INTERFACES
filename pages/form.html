@@ -36,7 +36,7 @@
 
         <nav>
 
-            <a class="menu-img" href="../index.html">
+            <a class="menu-img" href="./home.html">
                 <img src="../src/img/logo_municipio_la_matanza.png" alt="Bandera del Municipio de La Matanza">
             </a>
 
@@ -92,45 +92,66 @@
                 <div class="card-header bg-light text-center Datos">Datos</div>
                 <div class="card-header bg-light text-center Fecha">Fecha</div>
                 <div class="card-header bg-light text-center Confirmacion">Confirmacion</div>
+                
                 <div class="card-body">
+
                     <form class="formContainer">
 
                         <div class="campoInput" id="emailInputContainer">
-                            <i class="fa-solid fa-user"></i>
+                            <i class="fa-solid fa-file"></i>
                             <select id="tipo_tramite" class="inputSelectClass text-secondary">
-                                <option value="">Tipo de tramite</option>
+                                <option value="0">Seleccione un tipo de tramite</option>
+                                <option value="1">Renovación de licencia</option>
+                                <option value="2">Duplicado de licencia de conducir</option>
+                                <option value="3">Cambio o ampliación de categoría</option>
                             </select>
                         </div>
 
+                        <!--
                         <div class="campoInput" id="emailInputContainer">
                             <i class="fa-solid fa-user"></i>
                             <select id="tipo_documento" class="inputSelectClass text-secondary">
                                 <option value="">Tipo de documento</option>
                             </select>
-                        </div>
+                        </div>-->
 
-                        <div class="campoInput" id="emailInputContainer">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="text" name="numero_documento" id="numero_documento"
+                        <div class="campoInput inputNumber" id="emailInputContainer">
+                            <i class="fa-solid fa-id-card"></i>
+                            <input type="number" name="numero_documento" id="numero_documento"
                                 class=" inputClass text-center" placeholder="N° de documento">
                         </div>
 
                         <div class="campoInput" id="emailInputContainer">
                             <i class="fa-solid fa-user"></i>
-                            <input type="text" name="nombre" id="nombre" class="inputClass text-center"
-                                placeholder="Nombre">
+                            <input type="text" name="nombre" id="nombre" class="inputClass text-center" placeholder="Nombre">
+                        </div>
+
+                        
+                        <div class="campoInput" id="emailInputContainer">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" name="apellido" id="apellido" class="inputClass text-center" placeholder="Apellido">
                         </div>
 
                         <div class="campoInput" id="emailInputContainer">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="text" name="apellido" id="apellido" class="inputClass text-center"
-                                placeholder="Apellido">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <select id="tipo_tramite" class="inputSelectClass text-secondary">
+                                <option value="0">Seleccione una localidad</option>
+                                <option value="1">San Justo</option>
+                                <option value="2">Ramos Mejía</option>
+                                <option value="3">Lomas del Mirador</option>
+                                <option value="4">Ciudad Evita</option>
+                                <option value="5">Isidro Casanova</option>
+                                <option value="6">Gregorio de Laferrere</option>
+                                <option value="7">Villa Luzuriaga</option>
+                            </select>
                         </div>
 
+                        <!--
                         <div class="campoInput" id="emailInputContainer">
                             <i class="fa-solid fa-user"></i>
                             <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="inputClass inputDateClass">
                         </div>
+                        -->
 
                     </form>
 
