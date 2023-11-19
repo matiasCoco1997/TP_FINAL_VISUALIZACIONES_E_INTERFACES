@@ -170,11 +170,12 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById("popUp").style.display = 'flex'; 
     })
 
-    function cerrarPopup() {
-        const popup = document.getElementById('miPopup');
-        popup.style.display = 'none';
+
+    document.getElementById("cerrarPopup").addEventListener('click', function(){
         $(location).attr('href', "./home.html");
-      }
+        const popup = document.getElementById('popUp');
+        popup.style.display = 'none'; 
+    });
 
     // -------------------------Calendario---------------- //
 

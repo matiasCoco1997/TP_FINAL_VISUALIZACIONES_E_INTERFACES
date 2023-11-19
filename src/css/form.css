@@ -349,7 +349,6 @@
 }
 
 .bullet i{
-  color: #3498db;
   margin-right: 10px;
 }
 
@@ -499,21 +498,25 @@ p>span {
   background-color: #2980b9;
 }
 
-/* Estilos para dispositivos móviles */
+
 @media screen and (max-width: 767px) {
   .popup {
-    width: 100%; /* Ajustar el tamaño para dispositivos más pequeños */
-    max-width: none; /* Anular el tamaño máximo para dispositivos pequeños */
-    padding: 20px; /* Espaciado más pequeño en dispositivos móviles */
+    width: 100%;
+    max-width: none;
+    padding: 20px;
+  }
+
+  .popup a {
+    padding: 10px;
   }
   
   .popup-contenido {
-    padding-top: 30px; /* Más espacio para el contenido en dispositivos móviles */
+    padding-top: 30px;
   }
   
   .cerrar-popup {
-    top: 5px; /* Mover el botón de cerrar hacia arriba en dispositivos móviles */
-    right: 5px; /* Mover el botón de cerrar hacia la derecha en dispositivos móviles */
-    font-size: 16px; /* Tamaño de fuente más pequeño en dispositivos móviles */
+    top: 5px; 
+    right: 5px; 
+    font-size: 16px; 
   }
 }

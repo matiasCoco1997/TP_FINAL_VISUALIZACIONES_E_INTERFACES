@@ -103,14 +103,6 @@
                             </select>
                         </div>
 
-                        <!--
-                        <div class="campoInput" id="emailInputContainer">
-                            <i class="fa-solid fa-user"></i>
-                            <select id="tipo_documento" class="inputSelectClass text-secondary">
-                                <option value="">Tipo de documento</option>
-                            </select>
-                        </div>-->
-
                         <div class="campoInput inputNumber" id="campoInputDni">
                             <i class="fa-solid fa-id-card" id="iconoDni"></i>
                             <input type="number" name="numero_documento" id="numero_documento"
@@ -144,12 +136,6 @@
                             </select>
                         </div>
 
-                        <!--
-                        <div class="campoInput" id="emailInputContainer">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="inputClass inputDateClass">
-                        </div>
-                        -->
                         <span class="error-message" id="campos-error" style="display: none; width: 100%;">Algunos campos
                             se encuentran vacíos, complétalos para continuar.</span>
                     </form>
@@ -199,7 +185,7 @@
                                 <div class="content">
                                     <div class="bullet">
                                         <i class="fa-solid fa-circle-dot"></i>
-                                        <span>Tipo de tramite:</span>
+                                        <span>Tramite:</span>
                                         <p class="tramite">Renovar Registro</p>
                                     </div>
                                 </div>
@@ -209,8 +195,18 @@
                                 <div class="content">
                                     <div class="bullet">
                                         <i class="fa-solid fa-circle-dot"></i>
-                                        <span>Fecha turno:</span>
+                                        <span>Fecha:</span>
                                         <p class="tramite">Lunes 27/10/2023</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="content">
+                                    <div class="bullet">
+                                        <i class="fa-solid fa-circle-dot"></i>
+                                        <span>Horario:</span>
+                                        <p class="tramite">12:00 hs</p>
                                     </div>
                                 </div>
                             </div>
@@ -223,9 +219,10 @@
                             <input type="submit" class="btn btn-xs btn-success btn-siguiente" value="Siguiente">
                             <input class="btn btn-xs btn-success btn-confirmar" value="Confirmar">
                         </div>
-                        
+
                         <div class=" d-flex ">
-                            <a href="./home.html" type="submit" class="btn btn-xs btn-danger btn-home" id="homeBTN" style="padding-left: 30px; padding-right: 30px;">Salir</a>
+                            <a href="./home.html" type="submit" class="btn btn-xs btn-danger btn-home" id="homeBTN"
+                                style="padding-left: 30px; padding-right: 30px;">Salir</a>
                             <input type="submit" class="btn btn-xs btn-danger" id="volver" value="Volver">
                         </div>
                     </div>
@@ -235,18 +232,19 @@
 
         <div id="popUp" class="popup">
             <div class="popup-contenido">
-              <div class="cerrar-popup" onclick="cerrarPopup()">
-                <i class="fa-solid fa-circle-xmark"></i>
-              </div>
-              <h2 style="text-align: center;">¡ Turno confirmado !</h2>
-              <p>Recuerda estar 10 minutos antes para la revisión de documentación.</p>
-              <div class="opciones">
-                <a href="./home.html">Volver al Home</a>
-                <a href="ruta/al/archivo.pdf" download="nombre_del_archivo.pdf" class="descargar-btn">Descargar PDF</a>
-              </div>
+                <div class="cerrar-popup" id="cerrarPopup">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <h2 style="text-align: center;">¡ Turno confirmado !</h2>
+                <p>Recuerda estar 10 minutos antes para la entrega de documentación.</p>
+                <div class="opciones">
+                    <a href="./home.html">Volver al Home</a>
+                    <a href="../src/files/turno.pdf" download="turno.pdf" class="descargar-btn">Descargar
+                        PDF</a>
+                </div>
             </div>
-          </div>
-          
+        </div>
+
 
     </main>
 
