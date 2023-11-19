@@ -105,7 +105,6 @@
 
 .calendarContainer {
   display: flex;
-  gap: 30px;
   flex-direction: column;
   width: 100%;
   margin-bottom: 20px;
