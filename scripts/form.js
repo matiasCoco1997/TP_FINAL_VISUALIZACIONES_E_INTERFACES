@@ -165,9 +165,8 @@ document.addEventListener('DOMContentLoaded', function () {
         $(".loading").css("display", "flex"); 
         setTimeout(function () {
             $(".loading").css("display", "none");  
+            document.getElementById("popUp").style.display = 'flex'; 
         }, 1000);
-
-        document.getElementById("popUp").style.display = 'flex'; 
     })
 
 
