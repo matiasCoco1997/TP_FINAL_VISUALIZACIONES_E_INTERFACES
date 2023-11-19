@@ -165,8 +165,10 @@ document.addEventListener('DOMContentLoaded', function () {
         $(".loading").css("display", "flex"); 
         setTimeout(function () {
             $(".loading").css("display", "none");  
-            $(location).attr('href', "./home.html");
+            //$(location).attr('href', "./home.html");
         }, 1000);
+
+        document.getElementById("popUp").style.display = 'flex'; 
     })
 
     // -------------------------Calendario---------------- //

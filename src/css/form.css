@@ -315,7 +315,7 @@
 .messageContainer {
   width: 100%;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -339,16 +339,19 @@
 }
 
 .bullet {
-  width: 10px;
-  height: 10px;
-  background-color: #3498db;
-  border-radius: 50%;
-  margin-right: 10px;
+  display: flex;
+  color:white;
+  align-items: center;
 }
 
-/*.content {
-  flex: 1;
-}*/
+.bullet span{
+  font-weight: bold;
+}
+
+.bullet i{
+  color: #3498db;
+  margin-right: 10px;
+}
 
 p {
   margin: 0;
@@ -407,4 +410,42 @@ p>span {
 
 .iconoBlanco{
   color: white !important;
+}
+
+/* POP UP */
+
+/* Estilos para el popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-contenido {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el botón */
+.descargar-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.descargar-btn:hover {
+  background-color: #2980b9;
 }
