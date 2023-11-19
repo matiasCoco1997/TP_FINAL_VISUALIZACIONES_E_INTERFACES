@@ -165,11 +165,16 @@ document.addEventListener('DOMContentLoaded', function () {
         $(".loading").css("display", "flex"); 
         setTimeout(function () {
             $(".loading").css("display", "none");  
-            //$(location).attr('href', "./home.html");
         }, 1000);
 
         document.getElementById("popUp").style.display = 'flex'; 
     })
+
+    function cerrarPopup() {
+        const popup = document.getElementById('miPopup');
+        popup.style.display = 'none';
+        $(location).attr('href', "./home.html");
+      }
 
     // -------------------------Calendario---------------- //
 

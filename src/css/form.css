@@ -449,3 +449,71 @@ p>span {
 .descargar-btn:hover {
   background-color: #2980b9;
 }
+
+.cerrar-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1; /* Asegura que el botón esté encima del contenido */
+}
+
+/* Estilos para el ícono del botón de cerrar */
+.cerrar-popup i {
+  font-size: 30px;
+  color: red;
+}
+
+/* Estilos para el contenido del popup */
+.popup-contenido {
+  position: relative;
+  padding-top: 50px; /* Espacio para el botón de cerrar */
+}
+
+/* Estilos para las opciones (botones) del popup */
+.opciones {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.opciones a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.opciones a:hover {
+  background-color: #2980b9;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+  .popup {
+    width: 100%; /* Ajustar el tamaño para dispositivos más pequeños */
+    max-width: none; /* Anular el tamaño máximo para dispositivos pequeños */
+    padding: 20px; /* Espaciado más pequeño en dispositivos móviles */
+  }
+  
+  .popup-contenido {
+    padding-top: 30px; /* Más espacio para el contenido en dispositivos móviles */
+  }
+  
+  .cerrar-popup {
+    top: 5px; /* Mover el botón de cerrar hacia arriba en dispositivos móviles */
+    right: 5px; /* Mover el botón de cerrar hacia la derecha en dispositivos móviles */
+    font-size: 16px; /* Tamaño de fuente más pequeño en dispositivos móviles */
+  }
+}
