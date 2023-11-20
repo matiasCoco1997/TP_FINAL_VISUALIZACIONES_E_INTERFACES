@@ -184,7 +184,7 @@ main {
     width: 90%;
     height: 90%;
     display: flex;
-    align-items:start;
+    align-items: start;
     justify-content: space-evenly;
     box-shadow: 5px 5px 10px;
     transition: 0.3s all;
@@ -192,27 +192,29 @@ main {
 }
 
 
-.caja-enlace{
+.caja-enlace {
     text-decoration: none;
     box-shadow: 5px 5px 10px #000000;
 }
+
 .caja:hover {
     transform: translateY(-9px);
     background-color: #BAD9FF;
 }
 
-.icono-caja{
+.icono-caja {
     margin-left: 10px;
     margin-bottom: 10px;
 }
-.material-symbols-outlined{
+
+.material-symbols-outlined {
     font-size: 34px;
     color: #000000;
 }
 
 .texto-caja {
     margin-left: 10px;
-    border: solid 1px ;
+    border: solid 1px;
     border-radius: 5px;
     padding: 10px;
     width: 90%;
@@ -251,4 +253,181 @@ main {
     width: 90%;
     text-align: center;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 1100px) {
+    .home-container {
+        width: 90%;
+
+    }
+
+    .container-main {
+        gap: 10px;
+    }
+
+    .caja {
+        width: 80%;
+        height: 80%;
+        transition: 0.3s all;
+
+    }
+
+    .texto-caja {
+        font-size: 0.75em;
+    }
+
+    .ingresar {
+        max-width: 304px;
+        min-width: 304px;
+        height: 360px;
+    }
+
+    .title-ingresar {
+        font-size: x-large;
+    }
+
+    .descripcion-ingresar {
+        font-size: 1.1rem;
+    }
+
+    .boton-ingresar {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+
+
+    .ingresar {
+        max-width: 266px;
+        min-width: 266px;
+        height: 325px;
+    }
+
+    .contenedor-cajas {
+        grid-template-columns: 180px 180px 180px;
+        grid-template-rows: 180px 180px;
+    }
+
+    .texto-caja {
+        font-size: 0.70em;
+    }
+
+    .caja {
+        transition: 0.3s all;
+    }
+
+}
+
+@media screen and (max-width: 896px) {
+    .home-container {
+        width: 80%;
+    }
+
+    .container-main {
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 1.6em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor-cajas {
+        grid-template-columns: 180px 180px;
+        grid-template-rows: 180px 180px 180px;
+    }
+
+    .ingresar {
+        max-width: 247px;
+        min-width: 247px;
+        height: 505px;
+        padding: 18px;
+    }
+
+    .title-ingresar {
+        font-size: large;
+    }
+
+    .descripcion-ingresar {
+        font-size: 1.0rem;
+    }
+
+    .boton-ingresar {
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .title {
+        font-size: 1.4em;
+    }
+
+    .container-main {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contenedor-cajas {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .caja {
+        transition: none;
+        height: 110px;
+    }
+
+    .ingresar {
+        min-width: 80%;
+        height: 140px;
+    }
+
+    .descripcion-ingresar {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 432px) {
+
+    .container-main {
+        flex-direction: column;
+    }
+
+    .contenedor-cajas {
+        grid-template-columns: 160px 160px;
+        grid-template-rows: 160px 160px 160px;
+    }
+
+}
+
+@media screen and (min-width: 360px) and (max-width:432px) {
+    .title {
+        font-size: 1.3em;
+    }
+
+    .title-ingresar {
+        font-size: medium;
+    }
+
+    .descripcion-ingresar {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+
+    .boton-ingresar {
+        font-size: 0.7em;
+    }
+
+    .ingresar {
+        max-width: 230px;
+        padding: 12px;
+    }
 }
