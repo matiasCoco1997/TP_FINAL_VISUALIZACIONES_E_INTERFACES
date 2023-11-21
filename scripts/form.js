@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var fechaActual = new Date();
     var mesActual = fechaActual.getMonth();
     var anioActual = fechaActual.getFullYear();
+    var diaSeleccionado;
 
     var flagDate = false
 
@@ -25,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var selectDate = document.getElementById('Date');
     var errorInputEmpty = document.querySelector('.errorInputEmpty');
-
 
 
     succesBTN.addEventListener('click', function () {
@@ -129,8 +129,29 @@ document.addEventListener('DOMContentLoaded', function () {
         } else{
             document.getElementById("campos-error").style.display = "block";
         }
+        
 
+        var inputHorarioTramite =  document.querySelector(".input-horario").value;
+
+        document.querySelector(".name-confirmacion").innerHTML = `${inputNombreUsuario} ${inputApellidoUsuario}`
+        document.querySelector(".tipo-tramite").innerHTML = inputTipoDeTramite;
+        document.querySelector(".fecha-tramite").innerHTML = `${diaSeleccionado}/${mesActual}/${anioActual} `
+        document.querySelector(".horario-tramite").innerHTML = inputHorarioTramite;
+        document.querySelector(".sucursal-tramite").innerHTML = inputLocalidad;
+
+        
+
+
+
+
+        
+        
+        
+        
     });
+
+
+
 
     dangerBTN.addEventListener('click', function () {
 
@@ -248,6 +269,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         DateInput.style.display = "flex"
                         DateError.style.display = "none"
                         flagDateInvalid = false
+                        diaSeleccionado = diaActual;
                     });
                 })(i);
             }else{

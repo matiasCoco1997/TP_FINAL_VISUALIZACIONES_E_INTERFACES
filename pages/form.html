@@ -91,15 +91,15 @@
 
                 <div class="card-body">
 
-                    <form class="formContainer">
+                    <form class="formContainer" method="post">
 
                         <div class="campoInput" id="campoInputTipoTramite">
                             <i class="fa-solid fa-file" id="iconoTramite"></i>
                             <select id="tipo_tramite" class="inputSelectClass text-secondary" required>
                                 <option value="0">Seleccione un tipo de tramite</option>
-                                <option value="1">Renovación de licencia</option>
-                                <option value="2">Duplicado de licencia de conducir</option>
-                                <option value="3">Cambio o ampliación de categoría</option>
+                                <option value="Renovación de licencia">Renovación de licencia</option>
+                                <option value="Duplicado de licencia de conducir">Duplicado de licencia de conducir</option>
+                                <option value="Cambio o ampliación de categoría">Cambio o ampliación de categoría</option>
                             </select>
                         </div>
 
@@ -126,13 +126,13 @@
                             <i class="fa-solid fa-location-dot" id="iconoLocalidad"></i>
                             <select id="localidad" class="inputSelectClass text-secondary" required>
                                 <option value="0">Seleccione una localidad</option>
-                                <option value="1">San Justo</option>
-                                <option value="2">Ramos Mejía</option>
-                                <option value="3">Lomas del Mirador</option>
-                                <option value="4">Ciudad Evita</option>
-                                <option value="5">Isidro Casanova</option>
-                                <option value="6">Gregorio de Laferrere</option>
-                                <option value="7">Villa Luzuriaga</option>
+                                <option value="San Justo">San Justo</option>
+                                <option value="Ramos Mejía">Ramos Mejía</option>
+                                <option value="Lomas del Mirador">Lomas del Mirador</option>
+                                <option value="Ciudad Evita">Ciudad Evita</option>
+                                <option value="Isidro Casanova">Isidro Casanova</option>
+                                <option value="Gregorio de Laferrere">Gregorio de Laferrere</option>
+                                <option value="Villa Luzuriaga">Villa Luzuriaga</option>
                             </select>
                         </div>
 
@@ -154,15 +154,15 @@
                         <p class="errorDay">Lo sentimos, ese dia no esta disponible</p>
                         <div class="campoInput" id="campoInputDate">
                             <i class="fa-solid fa-user-clock" id="iconoDate"></i>
-                            <select id="Date" class="inputSelectClass text-secondary" required>
+                            <select id="Date" class="inputSelectClass text-secondary input-horario" required>
                                 <option value="0">Seleccione el horario</option>
-                                <option value="1">12:00</option>
-                                <option value="2">12:30</option>
-                                <option value="3">13:00</option>
-                                <option value="4">13:30</option>
-                                <option value="5">14:30</option>
-                                <option value="6">15:00</option>
-                                <option value="7">15:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
                             </select>
                         </div>
                         <p class="errorInputEmpty">Debe seleccionar el dia y horario</p>
@@ -177,8 +177,8 @@
                                 <div class="content">
                                     <div class="bullet">
                                         <i class="fa-solid fa-circle-dot"></i>
-                                        <span>Nombre:</span>
-                                        <p class="name">Facundo Ortega</p>
+                                        <span>Nombre: </span>
+                                        <p class="tramite name-confirmacion"></p>
                                     </div>
                                 </div>
                             </div>
@@ -187,8 +187,8 @@
                                 <div class="content">
                                     <div class="bullet">
                                         <i class="fa-solid fa-circle-dot"></i>
-                                        <span>Tramite:</span>
-                                        <p class="tramite">Renovar Registro</p>
+                                        <span>Tramite: </span>
+                                        <p class="tramite tipo-tramite"></p>
                                     </div>
                                 </div>
                             </div>
@@ -197,8 +197,8 @@
                                 <div class="content">
                                     <div class="bullet">
                                         <i class="fa-solid fa-circle-dot"></i>
-                                        <span>Fecha:</span>
-                                        <p class="tramite">Lunes 27/10/2023</p>
+                                        <span>Fecha: </span>
+                                        <p class="tramite fecha-tramite"></p>
                                     </div>
                                 </div>
                             </div>
@@ -207,8 +207,8 @@
                                 <div class="content">
                                     <div class="bullet">
                                         <i class="fa-solid fa-circle-dot"></i>
-                                        <span>Horario:</span>
-                                        <p class="tramite">12:00 hs</p>
+                                        <span>Horario: </span>
+                                        <p class="tramite horario-tramite">hs</p>
                                     </div>
                                 </div>
                             </div>
@@ -217,8 +217,8 @@
                                 <div class="content">
                                     <div class="bullet">
                                         <i class="fa-solid fa-circle-dot"></i>
-                                        <span>Sucursal:</span>
-                                        <p class="tramite">VTV San Justo</p>
+                                        <span>Sucursal: </span>
+                                        <p class="tramite sucursal-tramite"></p>
                                     </div>
                                 </div>
                             </div>
