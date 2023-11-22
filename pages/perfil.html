@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipio de La Matanza</title>
+
+    <link rel="icon" href="../src/img/logo_municipio_la_matanza_icono_browser.png" type="image/x-icon">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/perfil.css">
+
+
+    <!--FONT AWESOME-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--BOOSTRAP
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    -->
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+            <nav>
+
+                <a class="menu-img" href="./home.html">
+                    <img src="../src/img/logo_municipio_la_matanza.png" alt="Bandera del Municipio de La Matanza">
+                </a>
+    
+                <div class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+    
+    
+                <ul class="lista-nav">
+    
+                    <li class="link-menu" id="usuario-nav">
+                        <a href="./perfil.html" class="usuario-nav">
+                            <div class="circulo">
+                                <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                            </div>
+                        </a>
+                    </li>
+    
+                    <li class="link-menu" id="exit">
+                        <a href="./inciar_sesion.html" class="exit">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </a>
+                    </li>
+    
+                </ul>
+    
+            </nav>
+
+    </header>
+
+    <main class="mainclass">
+
+        <section class="sectionclase">
+
+            <form class="loginContainerForm ">
+
+                <div class="loginContainer">
+
+                    <h1 class="title">Perfil - Datos personales</h1>
+                    
+
+                    <div class="InputContainer">
+
+
+                        <div class="campoInput" id="nombreContainer">
+                            <i class="fa-solid fa-user" id="usuarioIcon"></i>
+                            <input class="inputRegistro" type="nombre" name="nombre" id="nombre" placeholder="Usuario">
+                        </div>
+
+
+                        <div class="campoInput" id="dniContainer">
+                            <i class="fa-solid fa-address-card" id="dniIcon"></i>
+                            <input class="inputRegistro" type="dni" name="dni" id="dni" placeholder="Nro. documento">
+                        </div>
+
+                        <div class="campoInput" id="emailContainer">
+                            <i class="fa-solid fa-envelope" id="emailIcon"></i>
+                            <input class="inputRegistro" type="email" name="email" id="email" placeholder="Email">
+                        </div>
+
+                        <div class="campoInput" id="passwordContainer">
+                            <i class="fa-solid fa-key" id="keyIcon"></i>
+                            <input class="inputRegistro" type="password" name="password" id="password"
+                                placeholder="Contraseña">
+                        </div>
+
+                        <span class="error-message" id="campos-error">Algunos campos se encuentran vacíos. Complétalos
+                            para continuar.</span>
+
+
+                    </div>
+
+                    <div class="buttonContainer">
+                        <button class="session" type="submit">Guardar</button>
+                    </div>
+
+                </div>
+            </form>
+        </section>
+
+        <div class="overlay" id="overlay"></div>
+
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <p>¡Tus datos han sido modificados con éxito!</p>
+                <button class="login-btn" id="btn_redireccion">Aceptar</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer-content">
+
+        <div class="footer-maps">
+            <h4>Dirección</h4>
+            <a
+                href="https://www.google.com.ar/maps/place/Almafuerte+3050,+B1754+San+Justo,+Provincia+de+Buenos+Aires/@-34.6770375,-58.5631534,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcc62f310d445d:0x1f71e74bafe6986a!8m2!3d-34.6770419!4d-58.5605785!16s%2Fg%2F11c0_n_x6n?entry=ttu">Almafuerte
+                3050 San Justo, Provincia de Buenos Aires</a>
+        </div>
+
+        <div class="footer-icons">
+            <h4>Redes sociales</h4>
+            <a href="https://www.facebook.com/municipiodelamatanza/?locale=es_LA"><i class="fab fa-facebook"></i></a>
+            <a
+                href="https://www.instagram.com/municipiodelamatanza/?fbclid=IwAR171bUF2h1s3SdCMcT7caKtIF9YkNWQiPLSMIAE4QXpgyCRCWwErB_wBoc"><i
+                    class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <div class="footer-phones">
+            <h4>Teléfonos</h4>
+            <p class="phone">0800-333-2126 / 0800-2222-147</p>
+        </div>
+
+        <p class="footer-derechos">&copy; 2023 UNLAM - Todos los derechos reservados</p>
+
+    </footer>
+
+    <!--SCRIPTS-->
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/perfil.js"></script>
+
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/dc0786cc41.js" crossorigin="anonymous"></script>
+
+    <!--BOOSTRAP
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
