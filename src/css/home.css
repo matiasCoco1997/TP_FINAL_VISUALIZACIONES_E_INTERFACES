@@ -169,19 +169,27 @@ main {
 
 .container-main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
+    margin: auto;
+}
+
+.home-container{
+    width: 60%;
 }
 
 .contenedor-cajas {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    gap: 20px;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 200px 200px;
+    align-items: center;
 }
 
 .caja {
     background-color: #f0f0f0;
-    width: 90%;
+    width: 100%;
     height: 90%;
     display: flex;
     align-items: start;
@@ -217,20 +225,20 @@ main {
     border: solid 1px;
     border-radius: 5px;
     padding: 10px;
-    width: 90%;
+    width: calc(100% - 20px);
     font-size: 0.9em;
     color: #f0f0f0;
     background-color: var(--color-azul);
 }
 
 .ingresar {
-    width: 380px;
-    height: 380px;
+    width: 100% !important;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    padding: 30px;
+    padding: 20px;
     background-color: #BAD9FF;
 }
 
@@ -239,34 +247,41 @@ main {
 }
 
 .descripcion-ingresar {
-    width: 90%;
-    font-size: 1.2rem;
-    margin-bottom: 150px;
+    width: 100%;
+    font-size: 1rem;
 }
 
 .boton-ingresar {
+    display: inline-block;
     text-decoration: none;
     background-color: var(--color-azul);
     padding: 10px;
     color: #f0f0f0;
     font-weight: bold;
-    width: 90%;
     text-align: center;
     border-radius: 5px;
+    width: 60%;
 }
 
-@media screen and (max-width: 1100px) {
-    .home-container {
-        width: 90%;
+.contenedor-boton {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
 
+
+@media only screen and (max-width: 1100px) {
+
+    .home-container {
+        width: 80%;
     }
 
     .container-main {
-        gap: 10px;
+        gap: 20px;
     }
 
     .caja {
-        width: 80%;
+        width: 100%;
         height: 80%;
         transition: 0.3s all;
 
@@ -274,11 +289,6 @@ main {
 
     .texto-caja {
         font-size: 0.75em;
-    }
-
-    .ingresar {
-        min-width: 304px;
-        height: 360px;
     }
 
     .title-ingresar {
@@ -295,18 +305,6 @@ main {
 }
 
 @media screen and (max-width: 1020px) {
-
-
-    .ingresar {
-        /*max-width: 266px;*/
-        min-width: 266px;
-        height: 325px;
-    }
-
-    .contenedor-cajas {
-        grid-template-columns: 180px 180px 180px;
-        grid-template-rows: 180px 180px;
-    }
 
     .texto-caja {
         font-size: 0.70em;
@@ -327,7 +325,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 100%;
     }
 
     .title {
@@ -337,16 +335,17 @@ main {
     }
 
     .contenedor-cajas {
-        grid-template-columns: 180px 180px 180px;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 180px 180px;
         justify-items: center;
         align-items: center;
         width: 100%;
+        gap: 20px;
     }
 
     .ingresar {
         width: 100%;
-        height: 200px;
+        height: 140px;
         padding: 18px;
     }
 
@@ -413,7 +412,7 @@ main {
 
 }
 
-@media screen and (min-width: 360px) and (max-width:432px) {
+@media screen and (max-width:432px) {
     .title {
         font-size: 1.3em;
     }
@@ -432,33 +431,41 @@ main {
     }
 
     .ingresar {
-        max-width: 230px;
         padding: 12px;
     }
+
+    .home-container {
+        width: 70%;
+    }
+
 }
 
 /*AGREGAR ESTE CODIGO EN TODAS LAS PAGINAS QUE ESTAS LOGUEADO*/
 .menu-btn {
     display: none;
-  }
-  
-  .lista-nav {
+}
+
+.lista-nav {
     display: flex !important;
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
     width: 40%;
-  }
-  
-  .lista-nav li {
+}
+
+.lista-nav li {
     width: auto;
     min-height: 50px;
     display: flex;
-  }
-  
-  .lista-nav li a {
+}
+
+.lista-nav li a {
     padding: 15px;
     padding-left: 30px;
     padding-right: 30px;
     min-height: 50px;
-  }
+}
+
+.title{
+    text-align: center;
+}
